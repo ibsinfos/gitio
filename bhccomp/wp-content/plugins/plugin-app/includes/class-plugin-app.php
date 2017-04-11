@@ -118,6 +118,8 @@ class Plugin_App {
 		 * side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-plugin-app-public.php';
+                
+                //require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/templates/home_page.php';
 
 		$this->loader = new Plugin_App_Loader();
 
