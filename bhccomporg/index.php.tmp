@@ -1,0 +1,9 @@
+<?php
+
+header( "Status: 301 Moved Permanently" );
+
+header( "Location: http://www.slaapmakendtestomgeving.nl/slaaplogboek/login.php" );
+
+exit(0); // dit is optioneel, maar wordt wel aangeraden. Hiermee voorkom je onnodige output
+
+?>
