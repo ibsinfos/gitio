@@ -1,0 +1,27 @@
+So here is our proper website: http://global-migrate.ae/  we want it to use a new theme and visual composer which we have installed on a test domain here http://www.visaembassy.com/ is this something you could do?
+
+
+wp Credentials:
+
+User: admin 
+Password: Glob@l1.2.3
+
+
+no need for the old site login to http://www.visaembassy.com/ instead
+
+
+we want the changes only making on visaembassy.com 
+ https://www.123-reg.co.uk/
+
+The user name is; Visaembassy
+Password is: Global@1.2.3
+under the web hosting section click the blue manage button
+
+
+gotta run email dan@twistfox.com if you need me for an emergency
+
+
+FTP:
+host: 94.136.40.103
+Username gaurav@visa-embassy.com
+pawword: t-y/Eftje
