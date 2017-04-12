@@ -25,3 +25,10 @@ FTP:
 host: 94.136.40.103
 Username gaurav@visa-embassy.com
 pawword: t-y/Eftje
+
+=================================
+
+FTP is on godaddy.com and login is
+
+User name: 55984047 
+Password: V15aEmba55y
