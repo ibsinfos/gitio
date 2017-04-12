@@ -1,0 +1,42 @@
+<form method="post" action="">
+    <table align="center" cellpadding="5" cellspacing="5" >
+    <tr>
+    <td colspan="2" class="Title" align="center">Enquire Form</td>
+    </tr>
+        <tr>
+            <td class="label">              
+                *Name :</td>
+            <td align="center">
+                
+                <input id="Text1" type="text" name="fname" /><span><?php echo $fname1; ?></span></td>
+        </tr>
+       <tr>
+            <td class="label">              
+                *Email :</td>
+            <td align="center">
+                
+                <input id="Text2" type="text" /></td>
+        </tr>
+        <tr>
+            <td class="label">              
+                *Phone No :</td>
+            <td align="center">
+                
+                <input id="Text1" type="text" /></td>
+        </tr>
+        <tr>
+            <td class="label">              
+                 Enquiry :</td>
+            <td align="center">
+                <textarea name="Enquiry" id="Enquiry" > </textarea>
+                 
+        </tr>
+        <tr>
+            <td>              
+               
+            
+              <input id="Button1" type="button" value="Submit" name="submit" /></td></tr>
+			  
+			  </table>
+          
+</form>

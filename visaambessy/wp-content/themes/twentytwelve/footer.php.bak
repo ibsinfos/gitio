@@ -1,0 +1,141 @@
+<?php
+/** * The template for displaying the footer * * Contains footer content and the closing of the #main and #page div elements.
+ *  * * @package WordPress * @subpackage Twenty_Twelve * @since Twenty Twelve 1.0 */
+?>
+<div class="row">   
+    <div class="container">       
+        <div class="col-md-12 typevisa">        
+            <h4 class="headbg">Visa Types</h4>        
+            <div class="col-md-3">               
+                <div class="workvisa">                
+                    <h4><a href="<?php echo site_url(); ?>/australia_visa/">Australian Visas</a></h4>    
+                    <ul>                  
+                        <li><a href="<?php echo home_url('gap-year-exchange-visas') ?>">Gap Year/ Exchange Visas</a></li>     
+                        <li><a href="<?php echo home_url('family-visa') ?>">Australia Family Visa</a></li>                  
+                        <li><a href="<?php echo home_url('student-visa') ?>">Australia Study Visa</a></li>                 
+                        <li><a href="<?php echo home_url('business-visa') ?>">Australia Business Visa</a></li>   
+                        <li><a href="<?php echo home_url('australia-work-visa') ?>">Australia Work Visa</a></li>   
+                        <li><a href="<?php echo home_url('australia-marriage-visa') ?>">Australia Marriage Visa</a></li>        
+                        <li><a href="<?php echo home_url('australia-tourist-visa') ?>">Australia Tourist Visa</a></li>    
+                        <li><a href="<?php echo home_url('permanent-residency-visa') ?>">Australia Permanent Residency</a></li>     
+                        <li><a href="<?php echo home_url('parent-visa') ?>">Parent Visa</a></li>             
+                    </ul>                </div>            </div>    
+            <div class="col-md-3">            
+                        <div class="workvisa">                  
+                            <h4><a href="<?php echo site_url(); ?>/uk/">UK Immigration</a></h4>     
+                            <ul>                     
+                                <li><a title="" href="<?php echo home_url('sponsorship-licence') ?>">Sponsorship Licence</a></li>   
+                                <li><a title="" href="<?php echo home_url('work-visas') ?>">UK Tier 2 Work Permit</a></li>    
+                                <li><a title="" href="<?php echo home_url('work-visas') ?>">UK Tier 1 Visa and Immigration </a></li>  
+                                <li><a title="" href="<?php echo home_url('ancestry-visa') ?>">Ancestry Visa</a></li> 
+                                <li><a title="" href="<?php echo home_url('uk-business-visa') ?>">UK Business Visa</a></li> 
+                                <li><a title="" href="<?php echo home_url('uk-study-visas') ?>">UK Student Visa</a></li>   
+                                <li><a title="" href="<?php echo home_url('uk-family-visa') ?>">UK Family Visa </a></li>    
+                                <li><a title="" href="<?php echo home_url('tourist-visas') ?>">UK Tourist Visa </a></li>  
+                                <li><a title="" href="<?php echo home_url('youth-mobility-scheme-working-holiday') ?>">Youth Mobility Scheme</a></li>  
+                                <li><a title="" href="<?php echo home_url('temporary-worker-visa') ?>">Temporary Worker Visa</a></li>     
+                            </ul>                </div>            </div>          
+            <div class="col-md-3">      
+                                <div class="workvisa">    
+                                    <h4><a href="<?php echo site_url(); ?>/canada-visa/">Canada Immigration</a></h4>     
+                                    <ul>                     
+                                     <li><a title="" href="<?php echo home_url('canada-visit-visa') ?>">Canada Visit Visa</a></li>
+                                     <li><a title="" href="<?php echo home_url('provincial-nominee-program') ?>">Provincial Nominee Program</a></li>     
+                                     <li><a title="" href="<?php echo home_url('canada-study-visa') ?>">Canada Study Visa</a></li>    
+                                     <li><a title="" href="<?php echo home_url('canada-marriage-visa') ?>">Canada Marriage Visa </a></li>  
+                                      
+                                     <li><a title="" href="<?php echo home_url('canada-family-visa') ?>">Canada Family Visa </a></li>     
+                                         
+                                     <li><a title="" href="<?php echo home_url('canada-permanent-residency') ?>">Canada Permanent Residency</a></li>  
+									 <li><a title="" href="<?php echo home_url('citizenship') ?>">Canada Citizenship Visa</a></li>
+									 <li><a title="" href="<?php echo home_url('sponsorship-visas') ?>">Canada Sponsorship Visas</a></li>
+                                     <li><a title="" href="<?php echo home_url('employment-visa') ?>">Employment Visa</a></li>     </ul>
+                                </div>             </div>     
+            <div class="col-md-3">              
+                <div class="workvisa" style="border-right:none;">     
+                    <h4><a href="<?php echo site_url(); ?>/denmark/">Denmark Immigration</a></h4>     
+                    <ul>                   
+                        <li><a href="<?php echo home_url('denmark-green-card-global-migrate') ?>">Denmark Green Card</a></li>     
+                        <li><a href="<?php echo home_url('study-visa-2') ?>">Denmark Study Visa</a></li>                    
+                        <li><a href="<?php echo home_url('denmark-immigration-2') ?>">Denmark Migration</a></li>        
+                        <li><a href="<?php echo home_url('denmark-positive-list') ?>">Denmark Positive List </a></li>   
+                        <li><a href="<?php echo home_url('denmark-family-visa') ?>">Denmark Family Visa </a></li>        
+                        <li><a href="<?php echo home_url('denmark-business-visa') ?>">Denmark Business Visa</a></li>     
+                        <li><a href="<?php echo home_url('denmark-marriage-visa') ?>">Denmark Marriage Visa </a></li>      
+                        <li><a href="<?php echo home_url('denmark-tourist-visa') ?>">Denmark Tourist Visa </a></li>      
+                        <li><a href="<?php echo home_url('denmark-permanent-residency') ?>">Denmark Permanent Residency </a></li>  
+                    </ul>
+                </div>            </div>        </div>     
+        <!-- <div class="col-md-2">            
+        <div class="workvisa">                        
+        
+        <h4>Visitor Visas</h4>                   
+        <ul>                                <li><a href="#">Family Visitor Visa</a></li>    
+        <li><a href="#">Marriage Visitor Visa</a></li>                            
+        <li><a href="#">Private Medical Treatment </a></li>                                <li><a href="#">Visitor Visa</a></li>       
+        <li><a href="#">Business Visitor Visa</a></li>                                <li><a href="#">Tourist Visa</a></li>               
+        </ul>                </div>        </div>           <div class="col-md-2">                <div class="workvisa">                
+        <h4>Ancestry Visa</h4>                </div>        </div>-->   
+    </div></div><div class="row">    <div class="container" style="margin-top:10px;"> 
+            <div class="col-md-12 set">            <div class="col-md-3">              
+                    <h4 class="whyuse">Why use Emigration Experts</h4>        
+                </div>            <div class="col-md-4 whyuse_txt">               
+                    <span class="glyphicon glyphicon-ok" style=" float: left; margin: 10px 0 0;"></span>
+                    <p style="float: left; margin: 8px 0 0 11px; width: 92%;">OISC, MARA and ICCRC Accredited Consultants </p>  
+                    <span class="glyphicon glyphicon-ok" style=" float: left; margin: 10px 0 0;"></span>
+                    <p style="float: left; margin: 8px 0 0 11px; width: 92%;">Established Solicitors and Immigration specialists</p>  
+                    <span class="glyphicon glyphicon-ok" style=" float: left; margin: 10px 0 0;"></span>
+                    <p style="float: left; margin: 8px 0 0 11px; width: 92%;">Ensure compliance with legal and other applicable standards</p>   
+                    <span class="glyphicon glyphicon-ok" style=" float: left; margin: 10px 0 0;"></span>
+                    <p style="float: left; margin: 8px 0 0 11px; width: 92%;">Educated and Trained staff to deal on your behalf</p>   
+                </div>            <div class="col-md-1"></div>            <div class="col-md-4 whyuse_txtt">         
+                    <span class="glyphicon glyphicon-ok" style=" float: left; margin: 10px 0 0;"></span>
+                    <p style="float: left; margin: 8px 0 0 11px; width: 92%;">Over 10,000 Successful Applications </p>    
+                    <span class="glyphicon glyphicon-ok" style=" float: left; margin: 10px 0 0;"></span>
+                    <p style="float: left; margin: 8px 0 0 11px; width: 92%;">Highest Success Rate in the Industry</p>  
+                    <span class="glyphicon glyphicon-ok" style=" float: left; margin: 10px 0 0;"></span>
+                    <p style="float: left; margin: 8px 0 0 11px; width: 92%;">Complete Immigration solutions</p> 
+                    <span class="glyphicon glyphicon-ok" style=" float: left; margin: 10px 0 0;"></span>
+                    <p style="float: left; margin: 8px 0 0 11px; width: 92%;">Dedicated Support with 24 Hour emergency line</p>  
+                </div>        </div>    </div></div><div class="row">    <div class="container" style="padding:0;">    
+                        <div id="footer_2">            <div class="col-md-12 hiscox">     
+                                <div class="col-md-2">  <?php logo_slider(); ?>   
+<!--                                  <img src="<?php echo get_template_directory_uri(); ?>/images/hisrox.png" style="margin: 10px 0 0 39px;">   -->
+                                  
+                                </div>    
+<!--                                 <div class="col-md-2">                   
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/oisc_logo.png" style="margin: 2px 0 2px 35px;">  
+                                </div>   
+                                <div class="col-md-2">                    
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/iccrc_logo_2.jpg" style="margin: 10px 0 0 35px;">      
+                                </div>    
+                                <div class="col-md-2">                
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/mara.png" style=" margin: 4px 0 0 35px;">   
+                                </div>         
+                                <div class="col-md-2">             
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/mia.png" style="margin: 4px 0 0 85px; width: 51%;">   
+                                </div>   -->
+                            
+                            </div>        </div>    </div>	
+                </div>	<div class="row">    <div class="container" style="padding:0;">  
+                        <div class="box" id="PartnerBlock">         
+                            <div class="col-md-12 carsol"> <?php //logo_slider(); ?>      
+           <?php echo TCHPCSCarousel(); ?>        
+                            </div>              
+                        </div>    </div> </div>
+<div class="row">    <div class="container" style="padding: 0px;"> 
+        <div class="col-md-12" style="margin: 9px 0 0 15px; width: 98.4%;">      
+            <ul class="publicbottomnav">           
+                 <li class="first"><a title="Nationality" href="">Nationality</a></li>
+                <li><a title="Contact Us" href="<?php echo site_url(); ?>/contact-us/">Contact Us</a></li>	
+                <li><a title="Links" href="<?php echo site_url(); ?>/latest-news/">Links</a></li>	
+                <li><a title="Embassies" href="">Embassies</a></li>	
+                <li><a title="Terms &amp; Conditions" href="<?php echo site_url(); ?>/terms-and-conditions/">Terms &amp; Conditions</a></li>	
+                <li><a title="Privacy Policy" href="<?php echo site_url(); ?>/privacy-policy/">Privacy Policy</a></li>	
+                <li><a title="Corporate Services" href="<?php echo site_url(); ?>/services/">Corporate Services</a></li>	
+                <li><a title="Immigration Law Jobs" href="<?php echo site_url(); ?>/accreditations/">Immigration Law Jobs</a></li>	
+                <li><a title="Site Map" href="">Site Map</a></li>         
+            </ul>   
+        </div>    </div></div><?php wp_footer(); ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js" type="text/javascript" language="javascript"></script></body></html>

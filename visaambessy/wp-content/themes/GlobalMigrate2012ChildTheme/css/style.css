@@ -1,0 +1,164 @@
+.top-bar{ width:100%; background:#E6E6E6;}
+.set { padding:15px 0 0 0;}
+.pull-top { margin-top:7px;}
+.map{ background:url("../images/map.png"); }
+.navbar-nav li a{ font-size:18px;}
+.row{ width:99%; }
+.sidebar { width:100%; float:left; background:url('../images/wizard.png');}
+.sidebar > h3,
+.sidebar > p { color: #FFFFFF; font-weight: normal; margin-left: 7%; text-align: left; }
+.sidebar >h4 { margin-left: 7%; text-align: left; padding-bottom: 15px;}
+.sidebar > form {  text-align: center;}
+.sidebar > form > select { width: 85%; margin-bottom: 20%; }
+.button-back { width:100%; float:left; background:url('../images/wizard-one-col.png'); padding:10px 0 10px 0; } 
+.button-back > .btn.btn-primary {
+  float: right;
+  margin-right: 7%;
+  width: 22%;
+}
+#publictopnav { float: right; margin-top: 1%; width: 90%;}
+#publictopnav > li {
+  border-right: 1px solid;
+  float: left;
+  list-style: none outside none;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+#publictopnav > li:last-child { border-right: medium none;}
+.banner { width:100%; float:left; margin-bottom:20px; }
+.banner > img { width: 100%;}
+.msg-box { width:100%; float:left; background:#f5f5f5; border:1px solid; border-radius:10px; }
+.msg-box > p { color: #999999; font-size: 13px; margin: 14px auto; text-align: justify; width: 96%;}
+.bg { left: 0; margin-bottom:15px; position: relative; top: 15px; width:100%; }
+.col-sm-4.col-md-4 > div {left: 0; padding: 20px 30px 0; position: absolute; top: 0;}
+.country-color {color: #4C67B3;}
+
+.col-sm-4.col-md-4 > div > h2 
+{ color: #002C61; font-size: 14pt; font-weight: normal; line-height: 16pt; margin: 10px 0 10px; padding: 0;}
+
+.col-sm-4.col-md-4 > div > span.desc { color: #999999; display: block; height:70px;}
+.bordervisa {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 #F5F6F7;
+  border-color: #CCCCCC;
+  border-image: none;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 0 0 1px;
+  padding: 0 !important;
+}
+.headbg { margin: 12px;}
+.workvisa { float: left; width: 100%; margin: 15px; border-right: 1px solid #ccc;}
+.workvisa ul {float: left; padding: 0;}
+.workvisa ul li {float: left; list-style: none;}
+.workvisa ul li a {
+  color: #ADADAD;
+  float: left;
+  font-size: 11px;
+  padding: 6px 0 0 1px;
+  text-decoration: none;
+}
+.workvisa ul li a:hover{color: #444;}
+.why_use {
+  background: url("../images/banner_why_use_bg.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+  text-align: left;
+}
+.why_use .left {
+  color: #FFFFFF;
+  float: left;
+  font-size: 22px;
+  line-height: 24px;
+  margin-left: 58px;
+  padding: 30px 38px;
+}
+.why_use .right {
+  color: #666666;
+  float: left;
+  font-size: 13px;
+  padding-top: 30px;
+}
+.why_use .right .left_col {
+  float: left;
+  padding-left: 61px;
+}
+.why_use .right ul {
+  list-style-image: url("../images/banner_why_use_tick.png");
+}
+.why_use .right .right_col {
+  background: url("../images/banner_why_use_div.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+  float: left;
+  padding-left: 17px;
+}.left_col > ul {
+  margin: 0 0 30px;
+}
+.why_use .right ul {
+  list-style-image: url("../images/banner_why_use_tick.png");
+}
+.accreditations {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  line-height: 104px;
+  margin: 10px auto 0;
+  text-align: center;
+  
+}
+.accreditations img {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+ .publicbottomnav {
+  background: none repeat scroll 0 0 #F5F6F7;
+  border: 1px solid #CCCCCC;
+  border-radius: 7px;
+  display: block;
+  margin-left: 0;
+  padding: 8px 0 10px 30px;
+}
+.publicbottomnav li {
+  border-left: 1px solid #666666;
+  display: inline;
+  list-style: none outside none;
+  margin-left: 0;
+  padding: 0 6px 0 7px;
+}
+.publicbottomnav li.first {
+  border-left: medium none;
+  padding-left: 0;
+}
+.publicbottomnav li a {
+  border: 0 none;
+  color: #666666;
+  text-decoration: none;padding: 0 0 0 10px;
+}
+ .dl.first {
+  border: 0 none;
+  padding-left: 30px;
+}
+.publicbottomnav dl {
+  border-left: 1px solid #E1E1E1;
+  display: block;
+  float: left;
+  line-height: 14pt;
+  margin: 20px 0;
+  padding: 0 60px;
+}
+dl {
+  border-left: 1px solid #CCCCCC;
+  padding: 16px;
+}
+@media screen and (max-width:360px)
+{
+.bg { height:180px; }
+body{ overflow-x:hidden;}
+}
+button.p-button {
+  background: url("../images/header-button-blue-sprite.png") no-repeat scroll right -114px rgba(0, 0, 0, 0);
+  height: 28px;
+  margin: 0;
+  padding: 0 16px 0 0;
+  text-align: center;
+}

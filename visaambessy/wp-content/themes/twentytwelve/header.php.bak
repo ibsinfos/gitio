@@ -1,0 +1,411 @@
+<?php
+/**
+ * The Header template for our theme
+ *
+ * Displays all of the <head> section and everything up till <div id="main">
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twelve
+ * @since Twenty Twelve 1.0
+ */
+?><!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html <?php language_attributes(); ?>>
+    <!--<![endif]-->
+    <head>
+        <meta charset="<?php bloginfo('charset'); ?>" />
+        <title><?php wp_title('|', true, 'right'); ?></title>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <!--<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css">-->
+        <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js" type="text/javascript" language="javascript"></script>
+        <link rel="profile" href="http://gmpg.org/xfn/11" />
+        <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type='text/javascript' src='<?php echo get_template_directory_uri() ?>/js/preloader.js'></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.carouFredSel-6.2.1-packed.js" type="text/javascript" language="javascript"></script>
+        
+        <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
+        <!--[if lt IE 9]>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        
+
+
+        <?php wp_head(); ?>
+<!--     popup code -->
+   <style type="text/css">
+    
+        .label
+        {
+            font-family: Verdana;
+            font-size: medium;
+            font-weight: bold;
+            color: #000000;
+        }
+        .click {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-family: Verdana;
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 93%;
+  position: fixed;
+  width: 7%;
+}
+    
+        .Title
+        {
+            font-family: Verdana;
+            font-size: large;
+            font-weight: bold;
+            color: #FF9900;
+        }
+    
+        #Button1
+        {
+            width: 75px;
+             font-family: Verdana;
+            font-size: medium;
+            font-weight: bold;
+            background-color:Teal;
+            color:#FFF;
+        }
+      .black_overlay{
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index:1001;
+			-moz-opacity: 0.8;
+			opacity:.80;
+			filter: alpha(opacity=80);
+		}
+		.white_content {
+			display: none;
+			position: absolute;
+			top: 27%;
+			
+			width: 358px;
+			height: 288px;
+			padding: 16px;
+			box-shadow:inset 0 0 4px 4px #999;
+			background-color: white;
+			z-index:1002;
+			overflow: auto;
+			border-radius:10px;
+			margin-left:34%;
+		}
+                #light td {
+  padding-bottom: 9px;
+  padding-left: 8px;
+  padding-right: 7px;
+  padding-top: 0;
+}
+		
+    </style>
+    
+<!--popup end-->
+        
+    </head>
+
+    <body <?php body_class(); ?>>
+    <body>
+	<style>
+.form {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(128, 128, 128);
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border-bottom-color: -moz-use-text-color;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-source: none;
+  border-image-width: 1 1 1 1;
+  border-top-color: -moz-use-text-color;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  float: right;
+  margin-right: 0;
+  position: fixed;
+  right: 0;
+  width: 23%;
+  z-index: 1;
+}
+.link_img {
+  float: left;
+  margin-left: 92%;
+  position: fixed;
+  z-index: 9999999;
+  cursor: pointer;
+}
+.container {
+  position: relative;
+}
+.form input {
+  margin-bottom: 6px;
+}
+#register-form > span {
+  color: rgb(255, 0, 0);
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(".form").hide (function(){
+  $(".link_img").click(function(){
+    $(".form").toggle(1000,function(){
+      //alert("The toggle() method is finished!");
+    });
+  });
+});
+});
+</script>
+</head>
+<body>
+<?php ob_start(); ?>
+<!--  <script>
+ function validate()
+ {
+ 				if( document.myForm.name.value == "" )
+ 				{
+ 				alert( "Please provide your name!" );
+ 				document.myForm.name.focus() ;
+ 				return false;
+ 				}
+ 				if( document.myForm.email.value == "" )
+ 				{
+ 				alert( "Please provide your email!" );
+ 				document.myForm.email.focus() ;
+ 				return false;
+ 				}
+ 				var x = document.forms["myForm"]["email"].value;
+ 				var atpos = x.indexOf("@");
+ 				var dotpos = x.lastIndexOf(".");
+ 				if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+ 					alert("Not a valid e-mail address");
+ 					return false;
+ 				}
+ 				if( document.myForm.phone.value == "" )
+ 				{
+ 				alert( "Please provide your phone!" );
+ 				document.myForm.phone.focus() ;
+ 				return false;
+ 				}
+ 				 var x = document.forms["myForm"]["phone"].value;
+ 				
+ 				if(isNaN(x)||x.indexOf(" ")!=-1)
+ 				{
+ 				   alert("Enter numeric value")
+ 				   return false; 
+ 				}
+ 				if (x.length<8)
+ 				{
+ 					 alert("plz enter 8 character more value");
+ 					 return false;
+ 				}
+ 				if( document.myForm.enquiry.value == "" )
+ 				{
+ 				alert( "Please provide your enquiry!" );
+ 				document.myForm.enquiry.focus() ;
+ 				return false;
+ 				}
+ 				}
+ 				function name() {
+ 				
+ 				var x = document.forms["myForm"]["name"].value;
+ 				if (x==null || x=="") {
+ 				document.getElementById("name").focus();
+ 				alert("First name must be filled out");
+ 				;
+ 				return false;
+ 				}
+ }
+ 	 
+ </script> -->
+<!-- <?php 
+    //print_r($_POST);
+     $link=get_permalink();
+    //echo $link;
+    if(isset($_POST['submit'])){
+	$name=$_POST['name'];
+	$email=$_POST['email'];
+	$phone=$_POST['phone'];
+	$enquiry=$_POST['enquiry'];
+	
+	 
+	$to      = 'ravinder.infowiz@gmail.com';
+    $subject = 'Enquiry Form';
+    $message = 'Message:'. $_POST['enquiry']. "<br>".'name:'.$_POST['name']. "<br>".'phone no.:'.$_POST['phone'];
+    $headers = 'From: '. $_POST['email']  . "rn" .
+    'Reply-To: '. $_POST['email']  . "rn" .
+    'X-Mailer: PHP/' . phpversion();
+
+    $send = mail($to, $subject, $message, $headers);
+//	if($send){
+//	header('location:'.$link);
+//	echo "ok"; 
+//	}
+//	else{
+//	echo "no";
+//	} 
+    }
+ ?> -->
+<div class="form" style="display:none">
+ <?php echo do_shortcode('[contact-form-7 id="1463" title="Enquire Form"]') ?>
+<!--<form method="post" action="" id="register-form" novalidate="novalidate" name="myForm" onsubmit="return(validate());">
+    <table align="center" cellpadding="5" cellspacing="5" >
+    <tr>
+    <td colspan="2" class="Title" align="center">Enquire Form</td>
+    </tr>
+        <tr>
+            <td class="label">              
+                *Name :</td>
+            <td align="center">
+                
+                <input id="name" type="text" name="name"   /><span><?php //echo $name1; ?></span></td>
+				
+        </tr>
+       <tr>
+            <td class="label">              
+                *Email :</td>
+            <td align="center">
+                
+                <input id="email" type="text" name="email" /></td>
+        </tr>
+        <tr>
+            <td class="label">              
+                *Phone No :</td>
+            <td align="center">
+                
+                <input id="phone" type="text" name="phone"/></td>
+        </tr>
+        <tr>
+            <td class="label">              
+                 Enquiry :</td>
+            <td align="center">
+                <textarea name="enquiry" id="enquiry" > </textarea>
+                 
+        </tr>
+        <tr>
+            <td>              
+               
+            
+              <input id="Button1" type="submit" value="Submit" name="submit"   /></td></tr>
+			  
+			  </table>
+          
+</form>-->
+ 
+</div>
+<div class="link_img">
+<img src="<?php echo get_template_directory_uri(); ?>/images/enquire.png"> 
+</div>
+   <div class="container" style="margin: 1% auto 0;">
+            <div class="col-md-12" >
+                <div class="col-md-4 map">
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" />
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div id="publictopnav">
+                            <h2>+44 (0) 207 993 4762</h2> 
+                            <p>info@global-migrate.com</p>
+                        </div>
+                        <!--ul id="publictopnav">
+                        <!--li class="current first"><a title="" href="">Visa UK</a></li-->	
+                        <!--li><a title="" href="">About Us</a></li>	
+                        <li><a title="" href="">Services</a></li>	
+                        <!--li><a title="" href="">Living in the UK</a></li>	
+                        <li><a title="" href="">Working in the UK</a></li-->	
+                        <!--li><a title="" href="">News</a></li>	
+                        <li><a title="" href="">FAQ</a></li>
+                    </ul-->
+                    </div>  
+                    </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-9">
+                            <form class="form-inline pull-right" role="form">
+                                <button class="btn btn-primary" type="button">Client Login</button>
+                            </form>
+                        </div>
+
+                    </div> 
+                    <div class="row">
+                        <ul class="socail" style="left:118px;">
+						<?php echo do_shortcode('[cn-social-icon]'); ?>
+                           <!--  <li><a href="https://twitter.com/"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png"></a></li>
+                            <li><a href="https://www.linkedin.com/uas/login"><img src="<?php echo get_template_directory_uri(); ?>/images/link.png"></a></li> 
+                            <li><a href="https://www.facebook.com/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb.png"></a></li> -->
+
+                        </ul>
+                    </div> </div>  
+                
+            </div>
+        </div><!--Container closed  -->
+
+        <div class="row">       
+            <div class="container">
+
+                <div class="col-md-12">	
+                    <div role="navigation" class="navbar navbar-inverse ">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <?php
+                                wp_nav_menu(array(
+                                    'menu' => 'primary',
+                                    'container' => '',
+                                    'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>',
+                                        )
+                                );
+                                ?>
+
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </div>
+                </div> 
+            </div><!--container nav closed -->
+        </div>    
