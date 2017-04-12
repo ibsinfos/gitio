@@ -97,6 +97,12 @@ class Plugin_App_Public {
 
         }
 
+        function app_reserve_page_template($page_template) {
+        if (is_page('App Login Page')) {
+            $page_template = dirname(__FILE__) . '/templates/home_page.php';
+        }
+        return $page_template;
+    }
         
 
 
