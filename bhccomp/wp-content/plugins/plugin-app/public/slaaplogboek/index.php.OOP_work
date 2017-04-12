@@ -1,0 +1,124 @@
+<?php
+//Include database connection details
+require_once('config.php');
+// Authenticate page
+require_once('auth.php');
+?>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="timeline.css" />
+</head>
+<body>
+<?php
+//mysql_pconnect("$host", "$username", "$password")or die("cannot connect"); 
+//mysql_select_db("$db_name")or die("cannot select DB");
+
+/*
+We need to include the config file
+to make use of the database.
+*/
+include_once("../wp-config.php");
+
+$myID = $_SESSION['myID'];
+$user_id = $myID;
+
+// MySQLi
+
+$result_ID = $DBH->prepare("SELECT * FROM ".$table_prefix."users WHERE ID = ?");
+$result_ID->bind_param("s", $myID);
+$result_ID->execute();
+
+$meta = $result_ID->result_metadata();
+
+while ($field = $meta->fetch_field()) {
+  $parameters[] = &$row[$field->name];
+}
+
+call_user_func_array(array($result_ID, 'bind_result'), $parameters);
+
+while ($result_ID->fetch()) {
+  foreach($row as $key => $val) {
+    $row_ID[$key] = $val;
+  }
+  $results[] = $x;
+}
+
+//var_dump($row_ID); die();
+
+//MySQLi 
+
+$my_user_name = $row_ID['display_name'];
+$admin  = $_SESSION['admin'];
+$datum = '';
+if (isset($_REQUEST["datum"]))
+    {
+        $datum = $_REQUEST["datum"];
+    }
+
+$_SESSION['overzicht_type'] = $overzicht_type;
+
+echo "<center><div class='logboekcontainer' id='logboekcontainer'>";
+echo "<div class='textholder' id='textholder'>";
+
+echo "<div style='text-align:right;'>";
+echo "Hallo, " . $my_user_name . "! | ";
+echo "<a href='logout.php'>Log uit</a> <BR>";
+echo "</div>";
+
+echo "<div class='logboektitel' id='logboektitel'>Logboek</div>";
+
+if ($admin == True)
+{   
+    include('admin_paneel.php');
+}
+
+// Vragenlijsten
+
+echo "<ul>";
+echo "<table bgcolor='#eeeeee'>";
+echo "<tr><td><b>Vragenlijsten</b></td></tr>";
+echo "<tr><td>";
+
+$order = "lijstnummer";
+$get_result = $DBH->prepare("SELECT naam, hoofdstuk, lijstnummer FROM ".$table_prefix."slaaplogboek_vragenlijst_lijsten ORDER BY ? ASC");
+$get_result->bind_param("s", $order);
+$get_result->execute();
+
+$admin_meta = $get_result->result_metadata();
+
+while ($admin_field = $admin_meta->fetch_field()) {
+  $get_parameters[] = &$get_row[$admin_field->name];
+}
+
+call_user_func_array(array($get_result, 'bind_result'), $get_parameters);
+while ($get_result->fetch()) {
+  foreach($get_row as $get_key => $get_val) {
+    $get_row[$key] = $get_val;
+  }
+  //$admin_results[] = $x;
+}
+ //var_dump($get_row); die();
+	
+   $get_row[$key] = "<li><b><a href='vragenlijst_invullen.php?lijstnummer=" . $row['lijstnummer'] . "&hoofdstuk=" . $hoofdstuk . "&user_id=" . $user_id . "'>" . $row['naam'] . "</a> (hoofdstuk " . $hoofdstuk . ")</b></li>";
+    //}
+//}
+ksort($get_row);
+foreach($get_row as $echoline) {
+    echo $echoline;
+}
+echo "</td></tr>";
+echo "</table>";
+echo "</ul>";
+
+echo '<BR><BR>';
+if (isset($_REQUEST["totaaloverzicht"]))
+    {
+		include('totaaloverzicht.php');
+	} else {
+		include('weekoverzicht.php');
+	}
+echo '</div></div></center>';
+?>
+</body>
+</html>
