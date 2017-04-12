@@ -32,3 +32,9 @@ FTP is on godaddy.com and login is
 
 User name: 55984047 
 Password: V15aEmba55y
+
+new ftp: 
+FTP Username: gaurav@global-migrate.co.uk
+FTP server: global-migrate.co.uk
+FTP & explicit FTPS port:  21
+password: qaz!@#wsx
