@@ -1,0 +1,1 @@
+[05-Feb-2017 05:36:42 UTC] PHP Fatal error:  Call to undefined function plugin_basename() in /home/wasiqglobaluk/public_html/global-migrate.ae/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 36

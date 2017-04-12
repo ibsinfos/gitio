@@ -1,0 +1,1 @@
+[02-Feb-2017 15:30:54 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/wasiqglobaluk/public_html/global-migrate.ae/wp-content/themes/twentytwelve/author.php on line 14
