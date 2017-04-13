@@ -170,7 +170,8 @@ class Plugin_App {
 
         $this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_styles');
         $this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_scripts');
-        $this->loader->add_filter('page_template', $plugin_public, 'app_reserve_page_template');
+        $this->loader->add_filter('page_template', $plugin_public, 'app_login_page_template');
+        //$this->loader->add_filter('page_template', $plugin_public, 'app_home_page_template');
     }
 
     /**

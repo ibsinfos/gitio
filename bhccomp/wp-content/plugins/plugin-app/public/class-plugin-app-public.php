@@ -51,7 +51,6 @@ class Plugin_App_Public {
 
         $this->plugin_app = $plugin_app;
         $this->version = $version;
-        
     }
 
     /**
@@ -73,6 +72,7 @@ class Plugin_App_Public {
          * class.
          */
         wp_enqueue_style($this->plugin_app, plugin_dir_url(__FILE__) . 'css/plugin-app-public.css', array(), $this->version, 'all');
+//        wp_enqueue_style($this->plugin_app, plugin_dir_url(__FILE__) . 'css/timeline.css', array(), $this->version, 'all');
     }
 
     /**
@@ -93,18 +93,21 @@ class Plugin_App_Public {
          * between the defined hooks and the functions defined in this
          * class.
          */
-        wp_enqueue_script( $this->plugin_app, plugin_dir_url( __FILE__ ) . 'js/plugin-app-public.js', array( 'jquery' ), $this->version, false );
+        wp_enqueue_script($this->plugin_app, plugin_dir_url(__FILE__) . 'js/plugin-app-public.js', array('jquery'), $this->version, false);
+    }
 
-        }
-
-        function app_reserve_page_template($page_template) {
+    public function app_login_page_template($page_template) {
         if (is_page('App Login Page')) {
-            $page_template = dirname(__FILE__) . '/templates/home_page.php';
+            $page_template = dirname(__FILE__) . '/templates/login.php';
         }
         return $page_template;
     }
-        
 
-
+//    public function app_home_page_template($page_template) {
+//        if (is_page('App Home Page')) {
+//            $page_template = dirname(__FILE__) . '/templates/index.php';
+//        }
+//        return $page_template;
+//    }
 
 }

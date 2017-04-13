@@ -1,4 +1,5 @@
 <?php
+session_start();
 //Include database connection details
 require_once('config.php');
 // Authenticate page
@@ -8,25 +9,29 @@ require_once('auth.php');
 We need to include the config file
 to make use of the database.
 */
-include_once("../../../../wp-config.php");
+//include_once("../../../../wp-config.php");
 
-$myID = $_SESSION['myID'];
+$myID = $_SESSION['user_id'];
 $user_id = $myID;
 
-$sql="SELECT * FROM ".$table_prefix."users WHERE ID='$myID'";
-$result=mysqli_query($DBH,$sql);
-$row = mysqli_fetch_assoc($result);
+//print_r($_SESSION);
 
-$my_user_name = $row['display_name'];
+$sql="SELECT * FROM ".$table_prefix."users WHERE ID='$myID'";
+//$result=mysqli_query($DBH,$sql);
+//$row = mysqli_fetch_assoc($result);
+
+$result = $wpdb->get_results($sql);
+//print_r($result);
+$my_user_name = $result[0]->display_name;
 ?>
 
 <html>
 <head>
-<script type='text/javascript' src='lib/xgetelementbyid.js'></script>
-<script type='text/javascript' src='lib/xtableiterate.js'></script>
-<script type='text/javascript' src='lib/xpreventdefault.js'></script>
-<script type='text/javascript' src='lib/inkleuren.js'></script>
-<link rel="stylesheet" type="text/css" href="timeline.css" />
+<script type='text/javascript' src="<?php echo plugin_dir_url(__FILE__) ?>../js/xgetelementbyid.js"></script>
+<script type='text/javascript' src="<?php echo plugin_dir_url(__FILE__) ?>../js/xtableiterate.js"></script>
+<script type='text/javascript' src="<?php echo plugin_dir_url(__FILE__) ?>../js/xpreventdefault.js"></script>
+<script type='text/javascript' src="<?php echo plugin_dir_url(__FILE__) ?>../js/inkleuren.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo plugin_dir_url(__FILE__) ?>../css/timeline.css" />
 <script type="text/javascript">
 	function show_validation(naam, bool) {
 		if (bool) {
@@ -64,13 +69,24 @@ $query_text .= $myID;
 $query_text .= "' AND datum = '";
 $query_text .= $datum_string;
 $query_text .= "'";
-$result_values=mysqli_query($DBH,$query_text);
-$values = True;
-$row_values = mysqli_fetch_assoc($result_values);
-if (count($row_values) == 1)
-{
-    $values = False;
+
+//$result_values=mysqli_query($DBH,$query_text);
+$values = true;
+$row_values  = $wpdb->get_results($query_text);
+
+//print_r($query_text);
+//print_r($row_values);
+//print_r(count($row_values[0]));
+//print_r(count((array)$row_values[0]));
+
+//count((array)$obj);
+
+//die;
+$obj = $row_values[0];
+if (count((array)$row_values[0]) == 1){
+    $values = false;
 }
+//var_dump($values);
 $_SESSION['values'] = $values;
 
 $datum_string = strftime("%a %d %B", $datum-60*60*24);
@@ -98,18 +114,22 @@ echo "</div><br>";
 echo "<div id='add-slaaplogboek'>";
 echo "<form action='insert.php' method='post'>";
 if ($values == True) {
-	echo "<input type='hidden' name = 'id' value = '". $row_values['ID'] ."'>";
+    //print_r($row_values[0]->ID); die('hhhh');
+	echo "<input type='hidden' name = 'id' value = '". $row_values[0]->ID ."'>";
 }
 $sql = "SELECT naam, vraag, waarde, type, hoofdstuk FROM ".$table_prefix."slaaplogboek_velden WHERE `type` != CONVERT( _utf8 'ja' USING latin1 ) AND `type` != CONVERT( _utf8 'nee' USING latin1) ORDER BY volgorde ASC";
-$result=mysqli_query($DBH,$sql);
+//$result=mysqli_query($DBH,$sql);
+$result = $wpdb->get_results($sql);
 
-while($row = mysqli_fetch_assoc($result))
-    {
+//while($row = mysqli_fetch_assoc($result))
+foreach($result as $row){
+//    print_r($row);
+//    die('asdr');
         echo '<p>	&nbsp; </p>';
-        echo '<span>' . $row["vraag"] . '</span>';
+        echo '<span>' . $row->vraag . '</span>';
         echo '<br />';
         
-        if($row['type'] == 'tijdlijn') {
+        if($row->type == 'tijdlijn') {
 ?>
 <div>
 <a href="#" onclick="javascript:greenOn()"><img src='greenpencil.png' width='50' border='0'></a>
@@ -130,9 +150,9 @@ Uit bed
     $i = 0;
     for($h = 1; $h <=24; $h++) {
         for($k = 1; $k <=4; $k++) {
-            $tag = $row['naam'] . $h . $k;
+            $tag = $row->naam . $h . $k;
             if ($values == True) {
-                $checked = substr($row_values[$row['naam']],$i,1);
+                $checked = substr($row_values[$row->naam],$i,1);
             }
             $i++;
             
@@ -167,9 +187,9 @@ Uit bed
     $i = 0;
     for($h = 1; $h <=24; $h++) {
         for($k = 1; $k <=4; $k++) {
-            $tag = $row['naam'] . $h . $k;
+            $tag = $row->naam . $h . $k;
             if ($values == True) {
-                $checked = substr($row_values[$row['naam']],$i,1);
+                $checked = substr($row_values[$row->naam],$i,1);
             }
             $i++;
             echo "      <td>";
@@ -202,11 +222,11 @@ Uit bed
 <?php
         }
         
-        if($row['type'] == 'cijfer') {
+        if($row->type == 'cijfer') {
         	if ($values == False) {
         	    $cijfer_value = -1; // If it's a new entry, set the cijfer to -1.
 			} else {
-				$cijfer_value = $row_values[$row['naam']];
+				$cijfer_value = $row_values[$row->naam];
 			}
         	$cijfers = array(
         	'-1' => '-',
@@ -223,7 +243,7 @@ Uit bed
 			'10' => '10'
 			);
 			?>
-			<select name="<?php echo $row['naam']?>">
+			<select name="<?php echo $row->naam?>">
 			<?php foreach( $cijfers as $var => $cijfer ): ?>
 			<option value="<?php echo $var ?>"<?php if( $var == $cijfer_value ): ?> selected="selected"<?php endif; ?>><?php echo $cijfer ?></option>
 			<?php endforeach; ?>
@@ -231,15 +251,15 @@ Uit bed
         	<?php
             }
         
-        if($row['type'] == 'tekst') {
-            echo '<label for="' . $row['naam'] . '">' . $row['waarde'] . '</label>';
-            if($row['hoofdstuk']>1) {
-            echo '<br><i>(vul in vanaf hoofstuk ' . $row['hoofdstuk'] . ')</i>';
+        if($row->type == 'tekst') {
+            echo '<label for="' . $row->naam . '">' . $row->waarde . '</label>';
+            if($row->hoofdstuk > 1) {
+            echo '<br><i>(vul in vanaf hoofstuk ' . $row->hoofdstuk . ')</i>';
             }
             echo '<br>';
-            echo '<textarea name="'. $row['naam'] . '" />';
+            echo '<textarea name="'. $row->naam . '" />';
             if ($values == True) {
-                echo $row_values[$row['naam']];
+                echo $row_values[$row->naam];
             }
             echo '</textarea>';
             }
@@ -252,22 +272,23 @@ Uit bed
 <?php
 
 $sql = "SELECT naam, vraag, type, hoofdstuk FROM ".$table_prefix."slaaplogboek_velden WHERE `type` = CONVERT( _utf8 'ja' USING latin1 ) OR `type` = CONVERT( _utf8 'nee' USING latin1) ORDER BY volgorde ASC";
-$result=mysqli_query($DBH,$sql);
-
-while($row = mysqli_fetch_assoc($result))
-    {
-    	$type = $row['type'];
+//$result=mysqli_query($DBH,$sql);
+$result = $wpdb->get_results($sql);
+foreach($result as $row){
+//    print_r($row); die('kkk');
+//while($row = mysqli_fetch_assoc($result))    {
+    	$type = $row->type;
         echo '<p>	&nbsp;';
-        echo '<span>' . $row['vraag'] . '</span>';
-        echo "<img id = '" . $row['naam'] . "_image' src='pixel.gif' width=16>";
-        if($row['hoofdstuk']>1) {
-            echo '<br><i>(vul in vanaf hoofstuk ' . $row['hoofdstuk'] . ')</i>';
+        echo '<span>' . $row->vraag . '</span>';
+        echo "<img id = '" . $row->naam . "_image' src='pixel.gif' width=16>";
+        if($row->hoofdstuk > 1) {
+            echo '<br><i>(vul in vanaf hoofstuk ' . $row->hoofdstuk . ')</i>';
         }
         echo '<br />';
         $ja = False;
         $nee = False;
         if ($values == True) {
-                $val = $row_values[$row['naam']];
+                $val = $row_values[$row->naam];
                 if ($val == 1){
                     $ja = True;
                 }
@@ -275,7 +296,7 @@ while($row = mysqli_fetch_assoc($result))
                     $nee = True;
                 }
             }
-        echo '<input type="radio" name="'. $row['naam'] . '" name="'. $row['naam'] . '" id="'. $row['naam'] . '" value="1"';
+        echo '<input type="radio" name="'. $row->naam . '" name="'. $row->naam . '" id="'. $row->naam . '" value="1"';
         /*if ($ja == True){
             echo ' checked';
         }*/
@@ -285,10 +306,10 @@ while($row = mysqli_fetch_assoc($result))
         	$bool = False;
         }
 
-        $link = "javascript: show_validation('". $row['naam'] ."', '" . $bool ."')";
+        $link = "javascript: show_validation('". $row->naam ."', '" . $bool ."')";
         echo ' onclick = "' . $link . '"';
         echo '/> Ja<br />';
-        echo '<input type="radio" name="'. $row['naam'] . '" name="'. $row['naam'] . '" id="'. $row['naam'] . '" value="0"';
+        echo '<input type="radio" name="'. $row->naam . '" name="'. $row->naam . '" id="'. $row->naam . '" value="0"';
         /*if ($nee == True){
             echo ' checked';
         }*/
@@ -297,7 +318,7 @@ while($row = mysqli_fetch_assoc($result))
 		} else {
         	$bool = False;
         }
-        $link = "javascript: show_validation('". $row['naam'] ."', '" . $bool ."')";
+        $link = "javascript: show_validation('". $row->naam ."', '" . $bool ."')";
         echo ' onclick = "' . $link . '"';
         echo '/> Nee';
     }

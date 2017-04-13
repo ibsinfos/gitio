@@ -4,17 +4,20 @@ We need to include the config file
 to make use of the database.
 */
 
-//die(get_site_url());
-include("../../../../wp-config.php");
+//global $wpdb;
+//print_r($wpdb);
 
-$DBH = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+//die(get_site_url());
+include("../../../../../wp-config.php");
+
+//$DBH = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
 /*
 We need to include the PasswordHass class
 to make use of the methods and to check
 if the passwords are matching. 
 */
-include_once("../../../../wp-includes/class-phpass.php");
+include_once("../../../../../wp-includes/class-phpass.php");
 setlocale(LC_TIME, 'nl_NL');
 
 // Include custom function to all pages - - - function will replace deprecated mysql_result() 

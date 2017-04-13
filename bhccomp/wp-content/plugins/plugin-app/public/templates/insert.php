@@ -1,4 +1,7 @@
 <?php
+session_start();
+print_r($_POST);
+//die('134343442');
 //Include database connection details
 require_once('config.php');
 // Authenticate page
@@ -8,6 +11,8 @@ $page = $_SESSION['page'];
 $admin = $_SESSION['admin'];
 $values = $_SESSION['values'];
 $hoofdstuk = $_SESSION['hoofdstuk'];
+
+print_r($_SESSION);
 
 if ($page == 'vraag')
 {
@@ -241,7 +246,8 @@ if ($page == 'vraag')
 	$datum_string = strftime("%Y-%m-%d", $datum);
 	
 	$sql = "SELECT naam, vraag, waarde, type FROM ".$table_prefix."slaaplogboek_velden ORDER BY volgorde ASC";
-	$result=mysqli_query($DBH,$sql);
+//	$result=mysqli_query($DBH,$sql);
+        $result = $wpdb->get_results($sql);
 	
 	if ($values == TRUE) {
 		$query_text = "REPLACE INTO ".$table_prefix."slaaplogboek (ID, userID, datum, toegevoegd";
@@ -249,10 +255,11 @@ if ($page == 'vraag')
 		$query_text = "INSERT INTO ".$table_prefix."slaaplogboek (userID, datum, toegevoegd";
 	}
 	
-	while($row = mysqli_fetch_assoc($result))
+        foreach($result as $row)
+//	while($row = mysqli_fetch_assoc($result))
 	{
 		$query_text .= ', ';
-		$query_text .= $row['naam'];
+		$query_text .= $row->naam;
 	}
 	
 	$query_text .= ") VALUES ('";
@@ -261,13 +268,17 @@ if ($page == 'vraag')
 		$query_text .= $_POST['id'] . "', '";
 	}
 	$query_text .= $myID . "', '" . $datum_string . "', NOW()";
-	$result = mysqli_query($DBH,$sql);
-	while($row = mysqli_fetch_assoc($result))
+        
+//	$result = mysqli_query($DBH,$sql);
+        $result = $wpdb->get_results($sql);
+        
+        foreach($result as $row)
+//	while($row = mysqli_fetch_assoc($result))
 	{
-		$type = $row['type'];
+		$type = $row->type;
 		$query_text .= ", '";
 		// field value
-		$value = mysqli_real_escape_string($DBH, $_POST[$row['naam']]);
+		$value = esc_sql($_POST[$row->naam]);
 		// if empty, set to -1
 		if ($value == '' AND ($type == 'ja' OR $type == 'nee' OR $type == 'cijfer')) {
 			$value = '-1';
@@ -278,7 +289,7 @@ if ($page == 'vraag')
             $slaaptijd = '';
             for($h = 1; $h <=24; $h++) {
                 for($k = 1; $k <=4; $k++) {
-                    $tag = $row['naam'] . $h . $k;
+                    $tag = $row->naam . $h . $k;
                     if (isset($_POST[$tag])) {
                         $slaaptijd = $slaaptijd . $_POST[$tag];
                     } else {
@@ -287,7 +298,7 @@ if ($page == 'vraag')
                     }
                 }
             }
-            $value = mysqli_real_escape_string($DBH, $slaaptijd);
+            $value = esc_sql($slaaptijd);
         }
 		
 		$query_text .= $value;
@@ -295,9 +306,11 @@ if ($page == 'vraag')
 	}
 	
 	$query_text .= ")";
-	//echo $query_text;
+	echo $query_text;
+        die('ghk');
 	
-	if (!mysqli_query($DBH,$query_text))
+//	if (!mysqli_query($DBH,$query_text))
+        if ($wpdb->insert($query_text))
 	  {
 	  die('Error: ' . mysqli_error());
 	  }

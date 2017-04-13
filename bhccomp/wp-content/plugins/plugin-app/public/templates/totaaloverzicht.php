@@ -1,4 +1,5 @@
 <?php
+session_start();
 //Include database connection details
 require_once('config.php');
 // Authenticate page
@@ -6,7 +7,7 @@ require_once('auth.php');
 ?>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="timeline.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo plugin_dir_url(__FILE__) ?>../css/timeline.css" />
 </head>
 <body>
 <?php
@@ -32,14 +33,18 @@ echo "</div>";
 //Overzichtstabel
 
 $sql = "SELECT naam, beschrijving, type FROM ".$table_prefix."slaaplogboek_velden WHERE `gemiddelde` = 1 AND (`type` = CONVERT( _utf8 'ja' USING latin1 ) OR `type` = CONVERT( _utf8 'nee' USING latin1)) ORDER BY volgorde ASC";
-$result=mysqli_query($DBH,$sql);
+//$result=mysqli_query($DBH,$sql);
+$result  = $wpdb->get_results($sql);
 
 //Get info from database
 $query_text = "SELECT * FROM ".$table_prefix."slaaplogboek WHERE userID = '";
 $query_text .= $user_id;
 $query_text .= "'";
-$result_values=mysqli_query($DBH,$query_text);
-$row_values = mysqli_fetch_assoc($result_values);
+//$result_values=mysqli_query($DBH,$query_text);
+//$row_values = mysqli_fetch_assoc($result_values);
+$row_values  = $wpdb->get_results($query_text);
+
+//print_r($row_values);
 
 if($row_values!=null) {
     echo '<table style="border:1px solid black">';
@@ -54,7 +59,8 @@ if($row_values!=null) {
     echo 'Je hebt nog geen dagen in het logboek ingevuld. Begin door <a href="dag_toevoegen.php">hier</a> het logboek voor vandaag in te vullen.';
 }
 
-while($row = mysqli_fetch_assoc($result))
+//while($row = mysqli_fetch_assoc($result))
+foreach($result as $row)
 {
     //Get info from database
     $query_text = "SELECT * FROM ".$table_prefix."slaaplogboek WHERE userID = '";
