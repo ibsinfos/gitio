@@ -1,0 +1,22 @@
+.home-box.home-box-1 .featured-box{
+    background: url("http://twistfox.dev/wp-content/uploads/2017/04/panel-work-1.jpg") no-repeat scroll 0 0;
+}
+.home-box.home-box-2 .featured-box{
+    background: url("http://twistfox.dev/wp-content/uploads/2017/04/panel-travel.jpg") no-repeat scroll 0 0;
+}
+.home-box.home-box-3 .featured-box{
+    background: url("http://twistfox.dev/wp-content/uploads/2017/04/panel-working-holiday-nz.jpg") no-repeat scroll 0 0;
+}
+.home-box.home-box-4 .featured-box{
+    background: url("http://twistfox.dev/wp-content/uploads/2017/04/panel-family.jpg") no-repeat scroll 0 0;
+}
+
+.featured-box{
+    min-height: 167px;
+}
+.featured-box .box-content{
+    padding: 10px;
+}
+.featured-box .wpb_content_element{
+    margin-bottom: 0;
+}
