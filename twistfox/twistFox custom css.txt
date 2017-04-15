@@ -20,3 +20,11 @@
 .featured-box .wpb_content_element{
     margin-bottom: 0;
 }
+.pricing-table li a{
+    color: #777777;
+    text-decoration: none;
+}
+.pricing-table li a:hover{
+    color: #000000;
+    text-decoration: none;
+}
