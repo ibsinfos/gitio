@@ -32,3 +32,14 @@
     color: #fff;
     text-decoration: none;
 }
+.gaurav-testimonial-page .testimonial blockquote{
+    width: 76%;
+    float: right;
+}
+.gaurav-testimonial-page .porto-testimonial.wpb_content_element .testimonial .testimonial-arrow-down{
+    display:none;
+}
+.gaurav-testimonial-page .porto-testimonial.wpb_content_element .testimonial .testimonial-author{
+    width: 20%;
+    float: left;
+}
