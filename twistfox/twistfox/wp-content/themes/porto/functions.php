@@ -556,3 +556,29 @@ function porto_enqueue_revslider_css() {
 
     wp_add_inline_style('rs-plugin-settings', $style);
 }
+
+
+/* Customized By Gaurav */
+//Example with enclosed content: [display_form_frontend]content[/display_form_frontend]
+function display_form( $atts, $content = "" ) {
+	//return "content = $content";
+	//echo get_the_post_thumbnail( $post_id, 'thumbnail', array( 'class' => 'alignleft' ) );
+	return '<div class="vc_col-sm-8">'.get_the_post_thumbnail( $post_id, 'thumbnail', array( 'class' => 'alignleft' ) ).'</div><div class="vc_col-sm-4">form here</div>';
+}
+add_shortcode( 'display_form_frontend', 'display_form' );
+
+function global_widget_areas(){
+		    register_sidebar(
+		    	array(
+			        'name' => __( 'News Page', 'theme-slug' ),
+			        'id' => 'sidebar-1',
+			        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+			        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+					'after_widget'  => '</li>',
+					'before_title'  => '<h2 class="widgettitle">',
+					'after_title'   => '</h2>',
+			    )
+
+		    );
+		}
+add_action( 'widgets_init', 'global_widget_areas'  );
