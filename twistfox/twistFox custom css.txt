@@ -28,3 +28,7 @@
     color: #000000;
     text-decoration: none;
 }
+.pricing-table.pricing-table-flat .plan h3.visa-title a, .pricing-table.pricing-table-flat .plan h3.visa-title a:hover{
+    color: #fff;
+    text-decoration: none;
+}
