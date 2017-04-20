@@ -563,7 +563,7 @@ function porto_enqueue_revslider_css() {
 function display_form( $atts, $content = "" ) {
 	//return "content = $content";
 	//echo get_the_post_thumbnail( $post_id, 'thumbnail', array( 'class' => 'alignleft' ) );
-    $formString = '<form onsubmit="return validateForm()" method="post" action="<?php echo home_url(); ?>/?page_id=310" id="assesment" name="assesment">
+    $formString = '<form onsubmit="return validateForm()" method="post" action="' . site_url() . '/free-assessment/" id="assesment" name="assesment">
 
     <h3>Visa Assessment</h3>
     <div class="frrasse_bg">
