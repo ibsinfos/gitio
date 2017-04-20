@@ -5,16 +5,17 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="custom_style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--<link rel="stylesheet" type="text/css" href="custom_style.css">-->
 	</head>
-	<body id="gaurav_instatute">
-		<nav class="navbar navbar-default">
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="row">
 			<div class="col-md-12">
-				<div class="col-md-3">
-					<a class="logo" href="#"><img src="logo.png" style="width:50%;height:auto;padding-top: 5px;"></a>
+				<div class="col-md-2">
+                                    <a class="logo" href="#"><img src="images/logo.png"></a>
 				</div>
-				<div class="col-md-9">
+				<div class="col-md-8">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">ABOUT US</a></li>
 						<li><a href="#">SPECIAL OFFER</a></li>
@@ -24,15 +25,31 @@
 						<li><a href="#">MORE</a></li>
 					</ul>
 				</div>
-			</div>
-		</nav>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<img src="bgimage.jpg" class="background_image">
+                            <div class="col-md-2 social">
+                                    <ul class="social-links">
+						
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
 				</div>
 			</div>
-		</div>
+                    </div>
+		</nav>
+            <div id="faq-tutor-page">
+                <div class="parallax">
+                    <div class="overlay">
+                        <h1 class="page-title-h1">FAQ's:&nbsp;Tutors</h1>
+                    </div>
+                    
+                </div>
+<!--		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+                                    <img src="images/bgimage.jpg" class="background_image">
+				</div>
+			</div>
+		</div>-->
 		
 			<div class="container">
 				<div class="row">
@@ -72,18 +89,22 @@
 				</div>
 			</div>
 		</div>
-		<div class="container bg_color">
-			<div class="row">
-				<div class="col-md-5">
+        </div>
+            <footer>
+		
+			<div class="row bg_color">
+                            <div class="container ">
+				<div class="col-md-4 text-align-right">
 					<ul>
-					<li><h4>Insta-tute</h4></li>
+					<li><h3>Insta-tute</h3></li>
 					<li><h5>PO Box 209, Gordon, NSW, 2072</h5></li>
-					<li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+					<li><i class="fa fa-facebook"></i><i class="fa fa-envelope"></i><i class="fa fa-instagram"></i><i class="fa fa-linkedin"></i></li>
 					</ul>
 				</div>
-				<div class="col-md-2"></div>
-				<div class="col-md-5"></div>
+				<div class="col-md-4  text-align-left"></div>
+				<div class="col-md-4  text-align-center"></div>
 			</div>
 		</div>
+            </footer>
 	</body>
 </html>
