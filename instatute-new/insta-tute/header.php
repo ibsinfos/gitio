@@ -17,21 +17,26 @@
                     </div>
                     <div class="col-md-8">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">ABOUT US</a></li>
-                            <li><a href="#">SPECIAL OFFER</a></li>
-                            <li><a href="#">CONTACT US</a></li>
-                            <li><a href="#">TUTORS</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">FOR STUDENTS OR PARENTS</a></li>
-                            <li><a href="#">MORE</a></li>
+                            <li class="active"><a href="about-us.php">ABOUT US</a></li>
+                            <li><a href="special-offer.php">SPECIAL OFFER</a></li>
+                            <li><a href="contact-us.php">CONTACT US</a></li>
+                            <li class="dropdown"><a href="tutors.php">TUTORS</a>
+							<ul class="dropdown-menu" role="menu">
+                                    <li><a href="faqs-tutors.php">FAQs: TUTORS</a></li>
+                                    <li><a href="sign-up-as-a-tutor.php">SIGN UP AS A TUTOR</a></li>
+                            </ul>
+							</li>
+                            <li class="dropdown"><a href="for-students-or-parents.php">FOR STUDENTS OR PARENTS</a>
+							<ul class="dropdown-menu" role="menu">
+                                    <li><a href="faqs-studentsparents.php">FAQs: STUDENTS/PARENTS</a></li>
+                            </ul>
+							</li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE</a>
+							<ul class="dropdown-menu" role="menu">
+                                    <li><a href="privacy-policy.php">PRIVACY POLICY</a></li>
+                                    <li><a href="terms-&-conditions.php">TERMS & CONDITIONS</a></li>
+                            </ul>
+							</li>
                         </ul>
                     </div>
                     <div class="col-md-2 social">

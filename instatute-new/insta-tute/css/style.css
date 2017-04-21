@@ -96,7 +96,57 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-left:100px;
 }
 /* ================================================================== */
+/* PRIVACY POLICY Page */
+#privacy-policy-page .parallax {
+        background-image: url(../images/bgimage.jpg);
+    height: 352px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 88px;
+}
+#privacy-policy-page .parallax .overlay{
+    width: 100%;
+    height: 352px;
+    background: rgba(0, 0, 0, .5);
+}
+#privacy-policy-page .parallax .page-title-h1{
+    color:#fff;
+    font-size: 90px;
+    font-weight: 500;
+    padding-top: 120px;
+    margin-left:100px;
+}
+#privacy-policy-page .privacy_margin{
+	margin-top:70px;
+}
+#privacy-policy-page .paragraph_privacy{
+	margin: 20px 0 20px 0;
+}
+/* ================================================================== */
+/* PRIVACY POLICY Page */
+#faqs-studentsparents-page .parallax {
+        background-image: url(../images/bgimage.jpg);
+    height: 352px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 88px;
+}
+#faqs-studentsparents-page .parallax .overlay{
+    width: 100%;
+    height: 352px;
+    background: rgba(0, 0, 0, .5);
+}
+#faqs-studentsparents-page .parallax .page-title-h1{
+    color:#fff;
+    font-size: 90px;
+    font-weight: 500;
+    padding-top: 120px;
+    margin-left:100px;
+}
 
+/* ================================================================== */
 /* Footer */
 footer, footer a{
     color: #fff;
@@ -107,6 +157,24 @@ footer,footer a:hover {
 }
 footer,form, .form_class{
 	margin-top: 25px;
+}
+form class, .email_addr{
+	background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 260px;
+}
+form class, .subs_btn{
+	padding: 10px 90px 10px 90px;
+    color: #2595BF;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+	margin-top: 15px;
+}
+input::placeholder {
+  color: #fff;
 }
 footer h3 {
     font-size: 25px;
@@ -152,22 +220,11 @@ footer i{
     font-family: 'Montserrat';
 	color: #666666;
 }
+footer, .privacy_policy{
+	margin-top:25px;
+}
+footer a , .text_deco{
+	text-decoration:underline;
+}
 
-
-/*vikas
-	padding: 10px 90px 10px 90px;
-    color: #2595BF;
-    border: none;
-    background-color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-	margin-top: 15px;
-	
-	
-	
-	    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #fff;
-    width: 260px;*/
-	
 	
