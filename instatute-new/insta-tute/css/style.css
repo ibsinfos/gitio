@@ -67,6 +67,10 @@ body {
     color: #1A95C1;
 }
 
+/* Navigation Dropdown */
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
 
 /* FAQ Tutor Page */
 
