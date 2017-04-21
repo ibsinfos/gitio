@@ -561,9 +561,13 @@ function porto_enqueue_revslider_css() {
 /* Customized By Gaurav */
 //Example with enclosed content: [display_form_frontend]content[/display_form_frontend]
 function display_form( $atts, $content = "" ) {
+    $formString = '';
+    if(($content)==""){
+        $formString .= '<div class="form_in_modal">';
+    }
 	//return "content = $content";
 	//echo get_the_post_thumbnail( $post_id, 'thumbnail', array( 'class' => 'alignleft' ) );
-    $formString = '<form onsubmit="return validateForm()" method="post" action="<?php echo home_url(); ?>/?page_id=310" id="assesment" name="assesment">
+    $formString .= '<form onsubmit="return validateForm()" method="post" action="' . site_url() . '/free-assessment/" id="assesment" name="assesment">
 
     <h3>Visa Assessment</h3>
     <div class="frrasse_bg">
@@ -763,7 +767,9 @@ function validateForm() {
     }
 }
 </script>';
-
+if(($content)==""){
+        $formString .= '</div>';
+    }
 
 	//return '<div class="vc_col-sm-8">'.get_the_post_thumbnail( $post_id, 'thumbnail', array( 'class' => 'alignleft' ) ).'</div><div class="vc_col-sm-4">'.$formString.'</div>';
     

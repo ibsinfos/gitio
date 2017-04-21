@@ -17,7 +17,7 @@ get_header();
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-
+<?php the_content(); ?>
 
 <div class="container main-head-img">
   <div class="col-lg-8 page-banner" style="background: url(<?php echo $thumb_url;?>);"></div>
@@ -27,7 +27,7 @@ get_header();
 </div>
 
 <div class="container">
-	<div class="center-align">
+	<div class="center-align" style="text-align: center;">
 		<div class="fb-page" data-href="https://www.facebook.com/GlobalMigrate" data-width="750" data-height="850" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/GlobalMigrate"><a href="https://www.facebook.com/GlobalMigrate">Global Migrate</a></blockquote></div></div>
 	</div>
 </div>
