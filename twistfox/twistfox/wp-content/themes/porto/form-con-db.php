@@ -62,7 +62,8 @@ if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') 
 }
 //echo 'response ok!';
 //var_export($decoded->response);
-header('Location: http://global-migrate.ae/?page_id=809');
+//header('Location: http://global-migrate.ae/?page_id=809');
+header('Location: http://global-migrate.ae/thank-you');
 die();
 
 // $title=$_POST['title'];

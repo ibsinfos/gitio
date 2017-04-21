@@ -34,6 +34,20 @@
   
 }
 
+@media only screen and (max-width: 2500px) and (min-width: 1025px){
+    .form-group {
+    float: left;
+    margin-left: 30px;
+    width: 40%;
+    margin-bottom: 15px;
+}
+}
+form label {
+    font-weight: normal;
+    width: 100%;
+}
+
+
 </style>
  <?php
  
@@ -655,7 +669,7 @@
 
 <!--<link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/normalize.css">-->
 <!--<link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/main.css">-->
-<!--<link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/jquery.steps.css">-->
+<link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/jquery.steps.css">
 
 
 <script type="text/javascript" src="<?php echo bloginfo('template_directory'); ?>/js/modernizr-2.6.2.min.js"></script>
