@@ -1,8 +1,20 @@
 <?php include('header.php'); ?>
-            <div id="faq-tutor-page">
+            <div id="home-page">
                 <div class="parallax">
                     <div class="overlay">
-                        <h1 class="page-title-h1">FAQ's:&nbsp;Tutors</h1>
+                        <div class="container">
+				<div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8 parallax-details">
+                                        <h1 class="page-title-h1">We link experts to <br />learners in need.</h1>
+                                        <p class="text-large">Innovative Tutoring in Mathematics, Chemistry and Biology</p>
+                                        <a class="btn btn-primary" href="#">I AM A TUTOR</a><br />
+                                        <a class="btn btn-primary">I AM A TEACHER OR STUDENT</a>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                        </div>
+                        
                     </div>
                     
                 </div>

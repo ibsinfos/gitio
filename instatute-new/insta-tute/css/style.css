@@ -16,12 +16,32 @@ body {
     text-align: center;
 }
 
+.grey-text, p.paragraph_privacy{
+    color: #666666;
+}
+
+.flexslider{
+    margin: 0;
+    border: none;
+}
+.flex-viewport {
+    /*width: 100%;*/
+    height: 352px;
+}
+.privacy_margin{
+	margin-top:70px;
+}
+
+/*.flexslider .slides img {
+    width: 100%;
+    height: 200px;
+}*/
 /* Header */
 .navbar-default {
     background-color: #ffffff;
     border-color: #ffffff;
 }
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a, ul.dropdown-menu>li>a {
     color: #555;
     font-weight: 500;
 }
@@ -72,6 +92,17 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
 
+ul.dropdown-menu{
+    border: 1px solid #000;
+    border-radius: 0;
+}
+
+ul.dropdown-menu>li{
+    padding: 5px;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color: #ffffff;
+}
 
 /* FAQ Tutor Page */
 
@@ -98,8 +129,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 /* ================================================================== */
 /* PRIVACY POLICY Page */
+#privacy-policy-page p{
+    color: #666666;
+}
 #privacy-policy-page .parallax {
-        background-image: url(../images/bgimage.jpg);
+    background-image: url(../images/bgimage.jpg);
     height: 352px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -125,7 +159,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 	margin: 20px 0 20px 0;
 }
 /* ================================================================== */
-/* PRIVACY POLICY Page */
+/* FAQ Page */
 #faqs-studentsparents-page .parallax {
         background-image: url(../images/bgimage.jpg);
     height: 352px;
@@ -146,6 +180,55 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     padding-top: 120px;
     margin-left:100px;
 }
+
+
+
+/* ================================================================== */
+/* Terms Conditions Page */
+#terms-conditions-page .parallax {
+    background-image: url(../images/bgimage.jpg);
+    height: 352px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 88px;
+}
+
+#terms-conditions-page .parallax .overlay{
+    width: 100%;
+    height: 352px;
+    background: rgba(0, 0, 0, .5);
+}
+#terms-conditions-page .parallax .page-title-h1{
+    color:#fff;
+    font-size: 90px;
+    font-weight: 500;
+    padding-top: 120px;
+    margin-left:100px;
+}
+
+#terms-conditions-page .privacy_margin{
+	margin-top:70px;
+}
+#terms-conditions-page .paragraph_privacy{
+	margin: 20px 0 20px 0;
+}
+
+
+/* ================================================================== */
+/* for-students-or-parents page */
+#for-students-or-parents-page .slider {
+        /*background-image: url(../images/bgimage.jpg);*/
+    height: 352px;
+/*    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    margin-top: 88px;
+}
+
+
+
+
 
 /* ================================================================== */
 /* Footer */
@@ -229,3 +312,69 @@ footer a , .text_deco{
 }
 
 	
+
+
+
+
+/* Scroller in footer */
+#scroll-to-top .col-md-12{
+    text-align: center;
+    color: #2595BF;
+}
+
+/* Home Page */
+#home-page .parallax {
+    background-image: url(../images/home-page-bg.jpg);
+    height: 600px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 88px;
+}
+
+#home-page .parallax .overlay{
+    width: 100%;
+    height: 600px;
+    background: rgba(0, 0, 0, .6);
+}
+
+#home-page .parallax .parallax-details{
+    text-align: center;   
+    padding-top: 50px;
+}
+
+#home-page .parallax .page-title-h1{
+        color: #fff;
+    font-size: 85px;
+    font-weight: 400;
+    line-height: 100px;
+/*    padding-top: 120px;
+    margin-left:100px;*/
+}
+
+#home-page .parallax .text-large{
+        color: #fff;
+    font-size: 21px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: normal;
+}
+
+#home-page .parallax .btn-primary{
+    width: 337px;
+    height: 56px;
+    line-height: 56px;
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+    font-weight: 500;
+    background-color: #1A95C1;
+    border-color: #fff;
+    border: 2px solid #fff;
+    margin-bottom: 30px;
+}
+#home-page .parallax .btn-primary:hover{
+    border-color: #1A95C1;
+}
+
+
