@@ -567,7 +567,9 @@ function display_form( $atts, $content = "" ) {
     }
 	//return "content = $content";
 	//echo get_the_post_thumbnail( $post_id, 'thumbnail', array( 'class' => 'alignleft' ) );
-    $formString .= '<form onsubmit="return validateForm()" method="post" action="' . site_url() . '/free-assessment/" id="assesment" name="assesment">
+	$abc = (($content)=="") ? "assesment_modal" : "assesment";
+	$def = (($content)=="") ? 'validateFormModal()' : 'validateForm()';
+    $formString .= '<form onsubmit="return '.$def.'" method="post" action="' . site_url() . '/free-assessment/" id="'.$abc.'" name="'.$abc.'">
 
     <h3>Visa Assessment</h3>
     <div class="frrasse_bg">
@@ -757,6 +759,7 @@ function display_form( $atts, $content = "" ) {
 
 </form>
 <script>
+
 function validateForm() {
 
 	var residing = document.forms["assesment"]["residingcountry"].value;
@@ -766,6 +769,17 @@ function validateForm() {
         return false;
     }
 }
+
+function validateFormModal() {
+
+	var residing = document.forms["assesment_modal"]["residingcountry"].value;
+	var destination = document.forms["assesment_modal"]["destinationcountry"].value;
+    if ((residing == null || residing == "") || (destination == null || destination == "")) {
+        alert("Please select your country");
+        return false;
+    }
+}
+
 </script>';
 if(($content)==""){
         $formString .= '</div>';
