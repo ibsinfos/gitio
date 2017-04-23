@@ -377,4 +377,71 @@ footer a , .text_deco{
     border-color: #1A95C1;
 }
 
+#home-page h1.heading{
+        text-align: center;
+            font-size: 38px;
+/*            padding-top: 30px;*/
+}
+#home-page .large-font-paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #333333;
+}
 
+#home-page .border_bottom1{
+    border-bottom: 2px solid #888;
+}
+
+#home-page .svg{
+    width: 112px !important;
+    height: 112px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    float: none !important;
+    top: 0px !important;
+    left: 0px !important;
+    position: relative !important;
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+    padding-bottom: 0px !important;
+    margin-right: auto !important;
+    margin-left: calc(100% - 112px) !important;
+    max-width: 100% !important;
+    padding-right: 0px !important;
+    min-width: 0 !important;
+    text-align: center !important;
+    display: block !important;
+        border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-color: rgba(234, 235, 237, 1) !important;
+    border-top-color: rgb(234, 235, 237);
+    border-right-color: rgb(234, 235, 237);
+    border-bottom-color: rgb(234, 235, 237);
+    border-left-color: rgb(234, 235, 237);
+    border-width: 2px !important;
+    -webkit-border-radius: 50% !important;
+    border-style: solid !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#home-page .svg svg{
+        height: 100%;
+        font-weight: 300;
+        width: 50% !important;
+    color: rgba(158, 161, 164, 1) !important;
+    fill: rgba(158, 161, 164, 1) !important;
+}
+
+#home-page .dmRespColsWrapper h3{
+        color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+        margin-top: 0;
+}
+#home-page .dmRespColsWrapper p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #333333;
+}
