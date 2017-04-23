@@ -29,7 +29,7 @@ body {
     height: 352px;
 }
 .privacy_margin{
-	margin-top:70px;
+    margin-top:70px;
 }
 
 /*.flexslider .slides img {
@@ -107,7 +107,7 @@ ul.dropdown-menu>li{
 /* FAQ Tutor Page */
 
 #faq-tutor-page .parallax {
-        background-image: url(../images/bgimage.jpg);
+    background-image: url(../images/bgimage.jpg);
     height: 352px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -153,15 +153,15 @@ ul.dropdown-menu>li{
     margin-left:100px;
 }
 #privacy-policy-page .privacy_margin{
-	margin-top:70px;
+    margin-top:70px;
 }
 #privacy-policy-page .paragraph_privacy{
-	margin: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 /* ================================================================== */
 /* FAQ Page */
 #faqs-studentsparents-page .parallax {
-        background-image: url(../images/bgimage.jpg);
+    background-image: url(../images/bgimage.jpg);
     height: 352px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -208,21 +208,21 @@ ul.dropdown-menu>li{
 }
 
 #terms-conditions-page .privacy_margin{
-	margin-top:70px;
+    margin-top:70px;
 }
 #terms-conditions-page .paragraph_privacy{
-	margin: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 
 /* ================================================================== */
 /* for-students-or-parents page */
 #for-students-or-parents-page .slider {
-        /*background-image: url(../images/bgimage.jpg);*/
+    /*background-image: url(../images/bgimage.jpg);*/
     height: 352px;
-/*    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;*/
+    /*    background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;*/
     margin-top: 88px;
 }
 
@@ -240,25 +240,25 @@ footer,footer a:hover {
     text-decoration: underline;
 }
 footer,form, .form_class{
-	margin-top: 25px;
+    margin-top: 25px;
 }
 form class, .email_addr{
-	background-color: transparent;
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     width: 260px;
 }
 form class, .subs_btn{
-	padding: 10px 90px 10px 90px;
+    padding: 10px 90px 10px 90px;
     color: #2595BF;
     border: none;
     background-color: #fff;
     font-size: 16px;
     font-weight: 500;
-	margin-top: 15px;
+    margin-top: 15px;
 }
 input::placeholder {
-  color: #fff;
+    color: #fff;
 }
 footer h3 {
     font-size: 25px;
@@ -267,7 +267,7 @@ footer h3 {
 footer .bg_color{
     width:100%;
     background-color:#2595BF;
-        padding: 10px 0;
+    padding: 10px 0;
 }
 
 footer li,footer a{
@@ -302,16 +302,16 @@ footer i{
 .paragraph{
     font-weight: 400;
     font-family: 'Montserrat';
-	color: #666666;
+    color: #666666;
 }
 footer, .privacy_policy{
-	margin-top:25px;
+    margin-top:25px;
 }
 footer a , .text_deco{
-	text-decoration:underline;
+    text-decoration:underline;
 }
 
-	
+
 
 
 
@@ -344,16 +344,16 @@ footer a , .text_deco{
 }
 
 #home-page .parallax .page-title-h1{
-        color: #fff;
+    color: #fff;
     font-size: 85px;
     font-weight: 400;
     line-height: 100px;
-/*    padding-top: 120px;
-    margin-left:100px;*/
+    /*    padding-top: 120px;
+        margin-left:100px;*/
 }
 
 #home-page .parallax .text-large{
-        color: #fff;
+    color: #fff;
     font-size: 21px;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -378,9 +378,9 @@ footer a , .text_deco{
 }
 
 #home-page h1.heading{
-        text-align: center;
-            font-size: 38px;
-/*            padding-top: 30px;*/
+    text-align: center;
+    font-size: 38px;
+    /*            padding-top: 30px;*/
 }
 #home-page .large-font-paragraph{
     font-family: 'Roboto', sans-serif;
@@ -412,7 +412,7 @@ footer a , .text_deco{
     min-width: 0 !important;
     text-align: center !important;
     display: block !important;
-        border-radius: 50% !important;
+    border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     border-color: rgba(234, 235, 237, 1) !important;
     border-top-color: rgb(234, 235, 237);
@@ -426,22 +426,68 @@ footer a , .text_deco{
 }
 
 #home-page .svg svg{
-        height: 100%;
-        font-weight: 300;
-        width: 50% !important;
+    height: 100%;
+    font-weight: 300;
+    width: 50% !important;
     color: rgba(158, 161, 164, 1) !important;
     fill: rgba(158, 161, 164, 1) !important;
 }
 
 #home-page .dmRespColsWrapper h3{
-        color: #555;
+    color: #555;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-        margin-top: 0;
+    margin-top: 0;
 }
-#home-page .dmRespColsWrapper p{
+#home-page .dmRespColsWrapper p, #home-page .big-banner p{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 14px;
     color: #333333;
+}
+
+#home-page .big-banner .row{
+    min-height: 670px;
+}
+
+
+#home-page .big-banner #image-bg{
+
+    background-image: url(../images/big-banner.jpg);
+    background-size: cover !important;
+    height: 100%;
+    background-position: 50% 50% !important;
+
+}
+
+#home-page .big-banner #text{
+    background-color: #F8F9FC;
+    height: 100%;
+    padding: 40px;
+    padding-right: 15%;
+}
+
+#home-page .big-banner h1.heading {
+    text-align: left;
+}
+
+#home-page .big-banner p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #333333;
+}
+
+#home-page .big-banner .btn-primary {
+        color: #1A95C1;
+    background-color: #fff;
+    border-color: #1A95C1;
+    border-width: 2px;
+    width: 256px;
+    margin: 0;
+    height: 58px;
+    font-size: 16px;
+    line-height: 58px;
+    padding: 0;
+    font-weight: bold;
 }
