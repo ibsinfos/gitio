@@ -129,7 +129,7 @@
                         <div class="col-md-8">
                             <h3 class="text-align-center">Information Technology</h3> 
                             <p class="text-align-center">Every lesson is 45 minutes long, for optimal effectiveness. You can have one or two sessions per week, depending upon your need and availability.
-</p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -143,19 +143,74 @@
     <div class="container-fluid big-banner">
         <div class="row">
             <!--<div class="container-fluid">-->
-                <div class="col-md-6" id="image-bg"></div>
+            <div class="col-md-6" id="image-bg"></div>
             <div class="col-md-6" id="text">
                 <h1 class="heading">About Insta-tute</h1>
                 <hr>
                 <p>As a banker, married to a senior educator, we saw that there were a lack of options to find good quality tutors. The options were limited to expensive colleges, random phone numbers on telephone poles, or word-of-mouth. Only the last option could be highly trusted, however there was that risk that the tutor wasn't suitable for you.<br /><br />
 
-The solution seemed obvious - why not have a catalogue of experienced tutors who have been publicly rated and reviewed by their students? This way the best tutors would be the most visible, and have the greatest opportunity to impart their wisdom and experience to their students. <br /><br />
+                    The solution seemed obvious - why not have a catalogue of experienced tutors who have been publicly rated and reviewed by their students? This way the best tutors would be the most visible, and have the greatest opportunity to impart their wisdom and experience to their students. <br /><br />
 
-Michael (the banker), designed the proprietary system that matched the best tutors to the students, whilst Stevie (the teacher) made it all fit together, incorporating a robust on-boarding process, simple user interface, and regulatory compliance. This was a win-win situation for both the student and tutor, and so Insta-tute was born!</p>
+                    Michael (the banker), designed the proprietary system that matched the best tutors to the students, whilst Stevie (the teacher) made it all fit together, incorporating a robust on-boarding process, simple user interface, and regulatory compliance. This was a win-win situation for both the student and tutor, and so Insta-tute was born!</p>
                 <a class="btn btn-primary" href="#">GET STARTED TODAY!</a>
             </div>
             <!--</div>-->
-            
+
+        </div>
+    </div>
+
+    <div class="" style="height: 30px;background-color: transparent"></div>
+
+    <div class="row">
+        <div class="container">
+            <div class="col-md-1" id=""></div>
+            <div class="col-md-10" id="">
+                <h1 class="heading">How do we find <br />the perfect tutor?</h1>
+                <p class="text-align-center grey">We have developed an algorithm much more clever than we are, that takes into consideration<br /> many different factors to match the perfect tutor, to the relevant learner in need.</p>
+            </div>
+            <div class="col-md-1" id=""></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="col-md-1" id=""></div>
+            <div class="col-md-10" id="">
+                <div class="row">
+                    <div class="col-md-4" id="">
+                        <div class="image-box">
+                            <div class="image-container"><img src="https://irp-cdn.multiscreensite.com/e6df00b3/dms3rep/multi/desktop/math-700x467.jpg"> 
+                            </div>
+                        
+                        <div class="caption-container">
+                            <h3>Skills &amp; Expertise</h3> 
+                            <p>The perfect range of skills and expertise for you.</p> 
+                        </div>
+                            </div>
+                    </div>
+                    <div class="col-md-4" id="">
+                        <div class="image-box">
+                            <div class="image-container"><img src="https://irp-cdn.multiscreensite.com/e6df00b3/dms3rep/multi/desktop/math-700x467.jpg"> 
+                            </div>
+                        </div>
+                        <div class="caption-container">
+                            <h3>Skills &amp; Expertise</h3> 
+                            <p>The perfect range of skills and expertise for you.</p> 
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="">
+                        <div class="image-box">
+                            <div class="image-container"><img src="https://irp-cdn.multiscreensite.com/e6df00b3/dms3rep/multi/desktop/math-700x467.jpg"> 
+                            </div>
+                        </div>
+                        <div class="caption-container">
+                            <h3>Skills &amp; Expertise</h3> 
+                            <p>The perfect range of skills and expertise for you.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1" id=""></div>
         </div>
     </div>
 </div>

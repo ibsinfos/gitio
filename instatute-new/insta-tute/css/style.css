@@ -496,6 +496,24 @@ footer a , .text_deco{
     font-weight: bold;
 }
 
+#home-page .three-images{
+    
+}
+#home-page #three-images .col-md-4{
+    /*background-color: #F8F9FC;*/
+}
+#home-page #three-images .image-box{
+    padding: 0;
+    /*margin: 0 15px;*/
+}
+
+#home-page  .image-box, #home-page  .image-box img{
+    max-width: 286px;
+    height:320px;
+        /*padding: 0 10px;*/
+}
+
+
 /* Student Dashboard Page */
 
 .student-dashboard .slider {
@@ -527,3 +545,4 @@ footer a , .text_deco{
     color:#fff;
     background-color: rgba(76, 145, 214, 1);
 }
+
