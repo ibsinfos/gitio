@@ -40,10 +40,10 @@
 
                             <li class="dropdown"><a href="student-dashboard.php">STUDENT DASHBOARD</a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="faqs-studentsparents.php">SEARCH</a></li>
+                                    <li><a href="search.php">SEARCH</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href="#">SEARCH RESULT</a>
+                            <li class="dropdown"><a href="search-result.php">SEARCH RESULT</a>
                                 
                             </li>
 <!--                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE</a>

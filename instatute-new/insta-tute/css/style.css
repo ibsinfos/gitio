@@ -526,4 +526,104 @@ footer a , .text_deco{
 .student-dashboard .btn-success{
     color:#fff;
     background-color: rgba(76, 145, 214, 1);
+	width:220px;
+	text-align: left;
+}
+.student-dashboard .laura_crack{
+	margin:0;
+}
+.student-dashboard .laura_padding{
+	padding-top:20px;
+}
+.student-dashboard .btn_padding .btn.btn-success span{
+	margin-right:20px;
+	font-size:26px;
+}
+
+/* search result page */
+
+.search-result .slider {
+    height: 352px;
+    margin-top: 88px;
+}
+
+.search-result .graphicWidget{
+    width: 100px !important;
+    height: 100px !important;
+
+
+    border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    border-color: rgb(76, 145, 214) !important;
+    padding-top: 10px;
+        margin: 10px auto;
+    text-align: center;
+        border: 1px solid;
+}
+.search-result .graphicWidget svg{ 
+    width: 50% !important;
+    color: rgba(76, 145, 214, 1) !important;
+    fill: rgba(76, 145, 214, 1) !important;
+}
+
+.search-result .btn-success{
+    color:#fff;
+    background-color: rgba(76, 145, 214, 1);
+	width:220px;
+	text-align: left;
+}
+.search-result .laura_crack{
+	margin:0;
+}
+.search-result .laura_padding{
+	padding-top:20px;
+}
+.search-result .btn_padding .btn.btn-success span{
+	margin-right:20px;
+	font-size:26px;
+}
+
+/* search */
+
+.search .slider {
+    height: 352px;
+    margin-top: 88px;
+}
+
+.search .graphicWidget{
+    width: 100px !important;
+    height: 100px !important;
+
+
+    border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    border-color: rgb(76, 145, 214) !important;
+    padding-top: 10px;
+        margin: 10px auto;
+    text-align: center;
+        border: 1px solid;
+}
+.search .graphicWidget svg{ 
+    width: 50% !important;
+    color: rgba(76, 145, 214, 1) !important;
+    fill: rgba(76, 145, 214, 1) !important;
+}
+
+.search .btn-success{
+    color:#fff;
+    background-color: rgba(76, 145, 214, 1);
+	width:220px;
+	text-align: left;
+}
+.search .laura_crack{
+	margin:0;
+}
+.search .laura_padding{
+	padding-top:20px;
+}
+.search .btn_padding .btn.btn-success span{
+	margin-right:20px;
+	font-size:26px;
 }
