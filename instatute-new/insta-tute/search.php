@@ -59,10 +59,97 @@
 							<a href="#" class="btn btn-success"><span class="fa fa-question"></span><b> Student FAQ's </b></a>
                         </div>
 						<div class="col-md-3"><p><b>Search for Tutors here</b></p></div>
-					
-                    </div>
-
+						<div class="" style="height: 40px;background-color: transparent"></div>
+						<div class="col-md-3">
+							<form>
+								<p>Grade</p>
+								<select name="options value" class="form_class">
+									<option value="" selected="selected"></option>
+									<option value="k">k</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="first year">First Year</option>
+									<option value="second year">Second Year</option>
+									<option value="third year">Third Year</option>
+									<option value="fourth year">Fourth Year</option>
+									<option value="fifth year">Fifth Year</option>
+									<option value="opportunity Class">Opportunity Class Placement</option>
+									<option value="selective high schools">Selective High Schools</option>
+									<option value="international baccalaureate">International Baccalaureate</option>
+									<option value="other activities">Other Activities</option>
+								</select>
+							</form>
+						</div>
 						
+						<div class="col-md-3">
+							<form>
+								<p>Subject</p>
+								<select name="options value" class="form_class">
+									<option value=""></option>
+									<option value="1">Option1</option>
+									<option value="2">Option2</option>
+									<option value="3">Option3</option>
+									
+								</select>
+							</form>
+						</div>
+						
+						<div class="col-md-3">
+							<form>
+								<p>Day</p>
+								<select name="options value" class="form_class">
+									<option value=""></option>
+									<option value="1">Option1</option>
+									<option value="2">Option2</option>
+									<option value="3">Option3</option>
+								</select>
+							</form>
+						</div>
+						
+					<div class="col-md-3">
+							<form>
+								<p>Time</p>
+								<select name="options value" class="form_class">
+									<option value=""></option>
+									<option value="1">Option1</option>
+									<option value="2">Option2</option>
+									<option value="3">Option3</option>
+								</select>
+							</form>
+						</div>
+						
+					<div class="col-md-3">
+							<form>
+								<p>Maximum Hourly Rate</p>
+								<select name="options value" class="form_class">
+									<option value=""></option>
+									<option value="1">Option1</option>
+									<option value="2">Option2</option>
+									<option value="3">Option3</option>
+								</select>
+							</form>
+					</div>
+					<div class="col-md-3">
+							<form>
+								<p>I would like the tutor to come to me</p>
+								<select name="options value" class="form_class">
+									<option value=""></option>
+									<option value="yes">Yes</option>
+									<option value="no">No</option>
+								</select>
+							</form>
+					</div>
+                    </div>
 
             </div>
             <div class="col-md-1"></div>
