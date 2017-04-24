@@ -32,6 +32,9 @@ body {
     margin-top:70px;
 }
 
+p.bold{
+    font-weight: bold;
+}
 /*.flexslider .slides img {
     width: 100%;
     height: 200px;
@@ -447,7 +450,7 @@ footer a , .text_deco{
 }
 
 #home-page .big-banner .row{
-    min-height: 670px;
+    height: 670px;
 }
 
 
@@ -489,5 +492,38 @@ footer a , .text_deco{
     font-size: 16px;
     line-height: 58px;
     padding: 0;
+    margin-top: 15px;
     font-weight: bold;
+}
+
+/* Student Dashboard Page */
+
+.student-dashboard .slider {
+    height: 352px;
+    margin-top: 88px;
+}
+
+.student-dashboard .graphicWidget{
+    width: 100px !important;
+    height: 100px !important;
+
+
+    border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    border-color: rgb(76, 145, 214) !important;
+    padding-top: 10px;
+        margin: 10px auto;
+    text-align: center;
+        border: 1px solid;
+}
+.student-dashboard .graphicWidget svg{ 
+    width: 50% !important;
+    color: rgba(76, 145, 214, 1) !important;
+    fill: rgba(76, 145, 214, 1) !important;
+}
+
+.student-dashboard .btn-success{
+    color:#fff;
+    background-color: rgba(76, 145, 214, 1);
 }
