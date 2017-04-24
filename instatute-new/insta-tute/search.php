@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 
-<div class="student-dashboard">
+<div class="search">
     <div class="slider">
         <div class="flexslider">
             <ul class="slides">
@@ -35,8 +35,9 @@
                     </div>
                     <div class="col-md-10 laura_padding">
                         <p class="laura_crack"><b>Laura Cracknell</b></p>
-                        <p class="laura_crack"><b>Grade: 2</b></p>
-                        <p class="laura_crack"><b>Status Points:</b></p>
+                        <p class="laura_crack"><b>Hourly Rate: $30.00/hr</b></p>
+                        <p class="laura_crack"><b>Rating:</b></p>
+                        <p class="laura_crack"><b>Status:</b></p>
                     </div>
                 </div>
                 
@@ -44,34 +45,25 @@
                     <div class="row btn_padding">
                         <div class="col-md-3">
                             <a href="#" class="btn btn-success"><span class="fa fa-calendar-o"></span><b> Upcoming Bookings </b></a>
+							<div class="" style="height: 10px;background-color: transparent"></div>
+							<a href="#" class="btn btn-success"><span class="fa fa-calendar-o"></span><b> Past Bookings </b></a>
+							<div class="" style="height: 10px;background-color: transparent"></div>
+							<a href="#" class="btn btn-success"><span class="fa fa-clock-o"></span><b> Availability </b></a>
+							<div class="" style="height: 10px;background-color: transparent"></div>
+							<a href="#" class="btn btn-success"><span class="fa fa-graduation-cap"></span><b> Subjects </b></a>
+							<div class="" style="height: 10px;background-color: transparent"></div>
+							<a href="#" class="btn btn-success"><span class="fa fa-check"></span><b> Preferences </b></a>
+							<div class="" style="height: 10px;background-color: transparent"></div>
+							<a href="#" class="btn btn-success"><span class="fa fa-phone"></span><b> Contact Us </b></a>
+							<div class="" style="height: 10px;background-color: transparent"></div>
+							<a href="#" class="btn btn-success"><span class="fa fa-question"></span><b> Student FAQ's </b></a>
                         </div>
-                        <div class="col-md-3">
-                            <a href="#" class="btn btn-success"><span class="fa fa-calendar-o"></span><b> Past Bookings </b></a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="#" class="btn btn-success"><span class="fa fa-calendar-o"></span><b> Holidays </b></a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="#" class="btn btn-success"><span class="fa fa-clock-o"></span><b> Availability </b></a>
-                        </div>
+						<div class="col-md-3"><p><b>Search for Tutors here</b></p></div>
+					
                     </div>
-                    
-					<div class="" style="height: 40px;background-color: transparent"></div>
-					<div class="row btn_padding">
-                        <div class="col-md-3">
-                            <a href="#" class="btn btn-success"><span class="fa fa-search"></span><b> search </b></a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="#" class="btn btn-success"><span class="fa fa-graduation-cap"></span><b> Subjects </b></a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="#" class="btn btn-success"><span class="fa fa-check"></span><b> Preferences </b></a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="#" class="btn btn-success"><span class="fa fa-question"></span><b> Student FAQ's </b></a>
-                        </div>
-                    </div>
-                
+
+						
+
             </div>
             <div class="col-md-1"></div>
         </div>
