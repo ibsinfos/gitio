@@ -1,4 +1,0 @@
-[26-Jun-2014 06:27:39 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home2/infowiz/public_html/global-migrate/wp-content/themes/twentytwelve/thankyou.php on line 5
-[26-Jun-2014 06:28:11 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home2/infowiz/public_html/global-migrate/wp-content/themes/twentytwelve/thankyou.php on line 5
-[26-Jun-2014 06:29:30 America/Chicago] PHP Fatal error:  Call to undefined function language_attributes() in /home2/infowiz/public_html/global-migrate/wp-content/themes/twentytwelve/header.php on line 13
-[26-Jun-2014 06:29:35 America/Chicago] PHP Fatal error:  Call to undefined function language_attributes() in /home2/infowiz/public_html/global-migrate/wp-content/themes/twentytwelve/header.php on line 13
