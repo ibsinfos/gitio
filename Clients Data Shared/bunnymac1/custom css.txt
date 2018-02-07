@@ -1,0 +1,29 @@
+.gaurav-id-1{
+    background-color: #f6f6f6;
+    border-width: 1px;
+    border-color: #f6f6f6;
+    border-top-width: 3px;
+    border-top-color: #a0ce4e;
+    border-style: solid;
+}
+.es_textbox_button.es_submit_button{
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0px;
+    background: #a0ce4e;
+    padding: 13px 29px;
+    line-height: 17px;
+    font-size: 14px;
+    text-transform:uppercase;
+    border:none;
+    color: rgba(255,255,255,.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#a0ce4e, endColorstr=#a0ce4e);
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+.gaurav-class-2 .reading-box{
+    height:237px;
+}

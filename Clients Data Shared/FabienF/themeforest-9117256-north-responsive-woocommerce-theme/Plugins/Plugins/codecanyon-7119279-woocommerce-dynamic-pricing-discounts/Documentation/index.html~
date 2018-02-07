@@ -1,0 +1,339 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>WooCommerce Dynamic Pricing & Discounts - Documentation</title>
+	
+	<meta name="description" content="WooCommerce Dynamic Pricing & Discounts">
+	<meta name="author" content="RightPress">
+	<meta name="copyright" content="RightPress">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-03-10T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='450',easing='easeOutExpo';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#F3F3F3;color:#585858;}
+		::-moz-selection{background:#111111;color:#F1F1F1;}
+		::selection{background:#111111;color:#F1F1F1;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_12.png);}
+		a{color:#111111;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -ms-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -webkit-gradient(linear, 0 0, 0 585858%, from(#333333), to(#3B3B3B));
+			  background-image: -webkit-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -o-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: linear-gradient(top, #585858, #3B3B3B);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#585858', endColorstr='#3B3B3B', GradientType=0);
+			  border-color: #3B3B3B #3B3B3B #bfbfbf;
+			  color:#F9F9F9;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #585858 #585858 #bfbfbf;
+		  background-color: #3B3B3B;
+		}
+		hr{border-top:1px solid #E5E5E5;border-bottom:1px solid #F9F9F9;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#333333;color:#F1F1F1;http://static.revaxarts-themes.com/noise.gif}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #444444;-moz-text-shadow:1px 1px 0px #444444;text-shadow:1px 1px 0px #444444;}
+		#documenter_sidebar ul{border-top:1px solid #222222;}
+		#documenter_sidebar ul a{border-top:1px solid #444444;border-bottom:1px solid #222222;color:#F1F1F1;}
+		#documenter_sidebar ul a:hover{background:#111111;color:#F1F1F1;border-top:1px solid #111111;}
+		#documenter_sidebar ul a.current{background:#111111;color:#F1F1F1;border-top:1px solid #111111;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-chimpy">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#about_plugin" title="About Plugin">About Plugin</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#features" title="Features">Features</a></li>
+			<li><a href="#requirements" title="Requirements">Requirements</a></li>
+			<li><a href="#accessing_settings" title="Accessing Settings">Accessing Settings</a></li>
+			<li><a href="#pricing_rules" title="Pricing Rules">Pricing Rules</a></li>
+			<li><a href="#cart_discounts" title="Cart Discounts">Cart Discounts</a></li>
+			<li><a href="#settings" title="Settings">Settings</a></li>
+			<li><a href="#localization" title="Localization">Localization</a></li>
+			<li><a href="#support" title="Support">Support</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright RightPress 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>WooCommerce Dynamic Pricing & Discounts</h1>
+	<h2>Documentation</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 03/10/2014</li>
+	<li>latest update: 03/10/2014</li>
+	<li>by: <a href="http://codecanyon.net/user/RightPress">RightPress</a></li>
+	<li><a href="http://www.rightpress.net/woocommerce-dynamic-pricing-and-discounts">www.rightpress.net/woocommerce-dynamic-pricing-and-discounts</a></li>
+	</ul>
+	<p></p>
+	</section>
+
+<!------------------------------------------------------------------
+	About
+------------------------------------------------------------------>
+<section id="about_plugin">
+<div class="page-header"><h3>About Plugin</h3><hr class="notop"></div>
+<p><strong>WooCommerce Dynamic Pricing &amp; Discounts</strong> lets WooCommerce store owners create multiple pricing and discount rules with ease. This extension is a perfect tool for creating powerful pricing strategies as well as exciting short-term sales campaigns.</p>
+<p>Installation is painless and the solution works out of the box.</p>
+</section>
+
+<!------------------------------------------------------------------
+	Installation
+------------------------------------------------------------------>
+<section id="installation">
+<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<div>To install&nbsp;<strong>WooCommerce Dynamic Pricing &amp; Discounts</strong>&nbsp;simply:</div>
+<ul>
+<li>Make sure you have WordPress 3.5+ installed</li>
+<li>Download the plugin from&nbsp;CodeCanyon</li>
+<li>Unzip the downloaded file and locate a file named wc-dynamic-pricing-and-discounts.zip under Plugin</li>
+<li>Log in to your WordPress administrator zone</li>
+<li>Go to Plugins --&gt; Add New --&gt; Upload</li>
+<li>Upload file wc-dynamic-pricing-and-discounts.zip</li>
+<li>Activate the uploaded plugin</li>
+</ul>
+<div>&nbsp;</div>
+<div>In case FTP upload is required:</div>
+<ul>
+<li>Download the plugin from&nbsp;CodeCanyon</li>
+<li>Extract the archive</li>
+<li>Locate a folder named wc-dynamic-pricing-and-discounts&nbsp;under Plugin</li>
+<li>Upload this folder to wp-content/plugins</li>
+<li>In administrator zone, go to Plugins and activate this plugin</li>
+</ul>
+</section>
+
+<!------------------------------------------------------------------
+	Features
+------------------------------------------------------------------>
+<section id="features">
+<div class="page-header"><h3>Features</h3><hr class="notop"></div>
+<ul>
+<li>Supports multiple product pricing rules</li>
+<li>Supports multiple cart discount rules</li>
+<li>Possible to configure which rules are applied</li>
+<li>Possible to combine multiple rules</li>
+<li>Possible to override general rules with more specific rules</li>
+<li>Possible to set rule validity period</li>
+<li>Cart content conditions - products or categories in cart or not in cart</li>
+<li>Customer conditions - select specific customers or specific roles</li>
+<li>Two product pricing strategies - quantity discounts or special offers</li>
+<li>Possible to count quantities of one product and adjust another</li>
+<li>Possible to set percentage discount, price discount or fixed price</li>
+<li>Multiple conditions for cart discount rules</li>
+<li>Integrates tightly with WooCommerce</li>
+</ul>
+</section>
+
+<!------------------------------------------------------------------
+	Requirements
+------------------------------------------------------------------>
+<section id="requirements">
+<div class="page-header"><h3>Requirements</h3><hr class="notop"></div>
+<ul>
+<li>WordPress 3.5+</li>
+<li>WooCommerce 2.0+</li>
+</ul>
+</section>
+
+<!------------------------------------------------------------------
+	Accessing Settings
+------------------------------------------------------------------>
+<section id="accessing_settings">
+<div class="page-header"><h3>Accessing Settings</h3><hr class="notop"></div>
+<p>As soon as you install <strong>WooCommerce Dynamic Pricing &amp; Discounts</strong>, you will find the following menu link under WooCommerce:</p>
+<p><img src="assets/images/01.png" alt="" /><br /> <br />You can access <strong>WooCommerce Dynamic Pricing &amp; Discounts</strong>&nbsp;settings page by clicking on this link.</p>
+</section>
+
+<!------------------------------------------------------------------
+	Pricing Rules
+------------------------------------------------------------------>
+<section id="pricing_rules">
+<div class="page-header"><h3>Pricing Rules</h3><hr class="notop"></div>
+<p>Pricing Rules page allows you to create multiple price adjustment rules.</p>
+<p>You can select which rule is applied by changing value of the select field at the very top of the page:</p>
+<p><img src="assets/images/16.png" alt="" /></p>
+<p>This setting has no effect on the Exclude matched items rules - they are processed individually and removed from the set.</p>
+<p>Rules are processed in the same order they appear - you can reorder them by dragging.</p>
+<p>&nbsp;</p>
+<p><h4>Adding And Removing Rules</h4></p>
+<p>To add a new pricing rule, click on the following button:</p>
+<p><img src="assets/images/02.png" alt="" /></p>
+<p>This will add a new section with blank pricing rule form:</p>
+<p><img src="assets/images/03.png" alt="" /></p>
+<p>To delete one of your rules, simply click on the X icon next to its section name.</p>
+<p>Each rule can be configured by modifying settings in the following sections.</p>
+<p>&nbsp;</p>
+<p><h4>General Settings</h4></p>
+<p><img src="assets/images/04.png" alt="" /></p>
+<ul>
+<li><strong>Rule description</strong> - description that is used for your own reference (not public).</li>
+<li><strong>Method</strong> - choose pricing method to use. <em>Quantity discount</em> and <em>Special offer</em>&nbsp;will bring you an additional section of settings while <em>Exclude matched items</em>&nbsp;will allow you to easily exclude items matched by conditions to be excluded from other, more generic rules (e.g. exclude single product from a category rule).</li>
+<li><strong>Quantities based on</strong> - select how quantities are calculated. Selecting correct option is important as in most setups pricing rules are based on quantities.&nbsp;Use cumulative methods when you wish to set up scenarios like "<em>receive 10% discount on Product X when you buy any 10 items from Category Y"</em>.</li>
+<li><strong>If conditions are matched</strong> - set up pricing rule relation with other rules.</li>
+<li><strong>Valid from/until</strong> - set up rule validity dates. Dates are inclusive. Date fields can also be used to temporary disable a long term rule.</li>
+</ul>
+<p>&nbsp;</p>
+<p><h4>Conditions<h4></p>
+<p><img src="assets/images/05.png" alt="" /></p>
+<ul>
+<li><strong>Apply to</strong> - select what products or categories must be matched for this rule be activated. This setting supports inversed selection, i.e. "<em>any other but these</em>..."</li>
+<li><strong>Category list</strong> (not displayed&nbsp;above) - lets you select which categories to match if <em>Apply to</em> field is set to either <em>Categories in list</em> or <em>Categories not in list</em>.</li>
+<li><strong>Product&nbsp;list</strong> (not displayed&nbsp;above) -&nbsp;lets you select which products to match if <em>Apply to</em> field is set to either <em>Products in list</em> or <em>Products not in list</em>.</li>
+<li><strong>Customers</strong> - select what user roles or specific customers to apply this rule to. This setting supports inversed selectiong, i.e. <em>"any other customers but these..."</em></li>
+<li><strong>Role list</strong> (not displayed&nbsp;above) -&nbsp;lets you select which user roles to match if <em>Customers</em> field is set to either <em>Roles in list</em> or <em>Roles not in list</em>.</li>
+<li><strong>Customer list</strong> (not displayed&nbsp;above) -&nbsp;lets you select which user roles to match if <em>Customers</em> field is set to either <em>Customers in list</em> or <em>Customers&nbsp;not in list</em>.</li>
+</ul>
+<p>&nbsp;</p>
+<p><h4>Quantity Discount</h4></p>
+<p><img src="assets/images/06.png" alt="" /></p>
+<ul>
+<li><strong>Min quantity</strong> - enter minimum quantity for this pricing tier to be selected. Value is inclusive. If you do not wish to apply any discount to smaller quantities, it is safe to completely omit the first row.</li>
+<li><strong>Max quantity</strong> - enter maximum quantity for this pricing tier to be selected. Value is inclusive. Use asterisk character (*) to denote "unlimited".</li>
+<li><strong>Adjustment type</strong> -&nbsp;select percentage discount, price discount or fixed price. In case price ends up being a negative figure, this plugin will reset it to zero.</li>
+<li><strong>Value</strong> - enter adjustment value without currency or percent symbols. Be sure to use a dot (not a comma) to separate decimal part.</li>
+<li><strong>Products to adjust</strong> - select which products you wish to adjust. In most of the cases, you will want to adjust the products that were matched, however, this plugin lets you to match one set of products but apply an activated rule to other set of products. Please note that if you select other cart items to be adjusted, quantities of matched items (not items to adjust) will be used to determine pricing tier. In this case, the biggest quantity of all quantities will be used.</li>
+<li><strong>Category list</strong> (not displayed&nbsp;above) - products assigned to these categories will have their prices adjusted (if any of them exist in the cart) if <em>Specific categories</em> is selected under <em>Products to adjust</em>.</li>
+<li><strong>Product list</strong> (not displayed above) - these products will have their prices adjusted (if any of them exist in the cart) if <em>Specific products</em> is selected under <em>Products to adjust</em>.</li>
+</ul>
+<p>Click "Add Row" button to add a new pricing tier. To delete a row, click on the X button on the right side of the row. You can add any number of rows.</p>
+<p>Quantity Discount section is only available when method "Quantity discount" is selected.</p>
+<p>&nbsp;</p>
+<p><h4>Special Offer</h4></p>
+<p><img src="assets/images/07.png" alt="" /></p>
+<ul>
+<li><strong>Amount to purchase</strong> - enter amount of product (or other calculated quantity) to purchase until this rule is activated. Must be a round integer.</li>
+<li><strong>Products to adjust</strong> -&nbsp;select which products you wish to adjust. In most of the cases, you will want to adjust the products that were matched, however, this plugin lets you to match one set of products but apply an activated rule to other set of products. Please note that if you select other cart items to be adjusted, quantities of matched items (not items to adjust) will be taken into account. In this case, the biggest quantity of all quantities will be used.</li>
+<li><strong>Category list</strong> (not displayed above) -&nbsp;products assigned to these categories will have their prices adjusted (if any of them exist in the cart) if <em>Specific categories</em> is selected under <em>Products to adjust</em>.</li>
+<li><strong>Product list</strong> (not displayed above) -&nbsp;products assigned to these categories will have their prices adjusted (if any of them exist in the cart) if <em>Specific categories</em> is selected under <em>Products to adjust</em>.</li>
+<li><strong>Amount to adjust</strong> - enter amount of items to adjust. Must be a round integer.</li>
+<li><strong>Adjustment type</strong> -&nbsp;select percentage discount, price discount or fixed price. In case price ends up being a negative figure, this plugin will reset it to zero.</li>
+<li><strong>Adjustment value</strong> -&nbsp;enter adjustment value without currency or percent symbols. Be sure to use a dot (not a comma) to separate decimal part.</li>
+<li><strong>Repeat</strong> - whether to apply the same rule multiple times (if quantities allow) or not. For example, if you set up "buy 2 get 1 free" rule and leave "Repeat" unchecked, then 10 products at full price will earn only 1 free product. On the other hand, if you set "Repeat" to active, 10 products at full price will earn 5 free products.</li>
+</ul>
+<p>Special Offer section is only available when method "Special offer" is selected.</p>
+</section>
+
+<!------------------------------------------------------------------
+	Cart Discounts
+------------------------------------------------------------------>
+<section id="cart_discounts">
+<div class="page-header"><h3>Cart Discounts</h3><hr class="notop"></div>
+<p>Cart Discounts page allows you to create multiple cart discounts.</p>
+<p>You can select which discount is applied by changing value of the select field at the very top of the page:</p>
+<p><img src="assets/images/16.png" alt="" /></p>
+<p>Discounts are processed in the same order they appear - you can reorder them by dragging.</p>
+<p>&nbsp;</p>
+<p><h4>Adding And Removing Discounts</h4></p>
+<p>To add a new discount, click on the following button:</p>
+<p><img src="assets/images/08.png" alt="" /></p>
+<p>This will add a new section with blank cart discount form:</p>
+<p><img src="assets/images/09.png" alt="" /></p>
+<p>To delete one of your discounts, simply click on the X icon next to its section name.</p>
+<p>Each discount rule can be configured by modifying settings in the following sections.</p>
+<p>&nbsp;</p>
+<p><h4>General Settings</h4></p>
+<p><img src="assets/images/10.png" alt="" /></p>
+<ul>
+<li><strong>Rule description</strong> -&nbsp;description that is used for your own reference (not public).</li>
+<li><strong>Valid from/until</strong> -&nbsp;set up rule validity dates. Dates are inclusive. Date fields can also be used to temporary disable a long term rule.</li>
+<li><strong>Only if pricing not adjusted</strong> - if checked, this cart discount will not be applied if cart contains at least one item which price was adjusted by pricing rules.</li>
+</ul>
+<p>&nbsp;</p>
+<p><h4>Conditions</h4></p>
+<p><img src="assets/images/11.png" alt="" /></p>
+<ul>
+<li><strong>Field</strong> - cart property to check against. The following properties/methods are available: subtotal at least, subtotal less than, count of cart items at least, count of cart items less than, sum of item quantities at least, sum of item quantities less than, at least one product in cart (from a list), none of selected products in cart, at least one category in cart (from a list), none of selected categories in cart, user in list, user role in list, order count to date at least, amount spent to date at least, shipping country in list.</li>
+<li><strong>Value</strong> - enter a value that must be matched (or must not be matched if using inversed comparison) for this discount to be applied. Value field depends on the field type chosen and can be both text input and multi-select field.</li>
+</ul>
+<p>Conditions are joined together with an AND logical operator.</p>
+<p>Click "Add Condition" button to add a new cart discount condition. To delete a condition, click on the X button on the right side of the row. You can add any number of conditions.</p>
+<p>&nbsp;</p>
+<p><h4>Discount</h4></p>
+<p><img src="assets/images/12.png" alt="" /></p>
+<ul>
+<li><strong>Discount type</strong> -&nbsp;select percentage discount or price discount. In case cart subtotal ends up being a negative figure, subtotal will be reset to zero. By default, cart subtotal before calculating tax is adjusted, that is - cart discount is applied. If you would like to apply an order discount (after the tax is calculated), go to <em>Settings</em> tab and change field <em>Cart discount applied</em> to <em>After tax</em>.</li>
+<li><strong>Value</strong> -&nbsp;enter adjustment value without currency or percent symbols. Be sure to use a dot (not a comma) to separate decimal part.&nbsp;</li>
+</ul>
+</section>
+
+<!------------------------------------------------------------------
+	Settings
+------------------------------------------------------------------>
+<section id="settings">
+<div class="page-header"><h3>Settings</h3><hr class="notop"></div>
+<p>This page lets you control main settings of the plugin.</p>
+<p>&nbsp;</p>
+<p><h4>General Settings</h4></p>
+<p><img src="assets/images/13.png" alt="" /></p>
+<ul>
+<li><strong>Cart discounts applied</strong> - controls whether discount should be applied to cart subtotal before tax is calculated (cart discount) or to the order total after tax is calculated (order discount).</li>
+</ul>
+<p>&nbsp;</p>
+<p><h4>Quantity Pricing Table</h4></p>
+<p><img src="assets/images/14.png" alt="" /></p>
+<ul>
+<li><strong>Display pricing table</strong> - whether or not to display a pricing table on products that have quantity discount rule configured for them. This setting also allows you to choose whether table should be displayed inline or opened in a modal.</li>
+<li><strong>Table layout</strong> - whether to display values horizontally or vertically.</li>
+<li><strong>Display position</strong> - choose position on the product page where pricing table (or link to open a modal) should appear. Not all of positions will work with all themes.</li>
+</ul>
+<p>It is important to understand that if you have any other rules and/or conditions in addition to the very basic "Quantity discount" table, the final price may differ from what is displayed in the pricing table. It is your own responsibility to determine whether displaying a quantity pricing table on a product page for marketing purposes will work fine in your unique setup.</p>
+</section>
+
+<!------------------------------------------------------------------
+	Localization
+------------------------------------------------------------------>
+<section id="localization">
+<div class="page-header"><h3>Localization</h3><hr class="notop"></div>
+<p>This page lets you easily translate customer facing labels.</p>
+<p><img src="assets/images/15.png" alt="" /></p>
+</section>
+
+<!------------------------------------------------------------------
+	Support
+------------------------------------------------------------------>
+<section id="support">
+<div class="page-header"><h3>Support</h3><hr class="notop"></div>
+<p>If you have any questions, feel free to visit the <a style="text-decoration:underline;" href="http://support.rightpress.net/hc/en-us/categories/200133263-WooCommerce-Dynamic-Pricing-Discounts">support center</a> or submit a <a style="text-decoration:underline;" href="http://support.rightpress.net/hc/en-us/requests/new">support ticket</a>.</p>
+</section>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>WooCommerce PDF Invoice - Documentation</title>
+	
+	<meta name="description" content="Automatically generate PDF invoices for your WooCommerce orders.">
+	<meta name="author" content="RightPress">
+	<meta name="copyright" content="RightPress">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2013-10-24T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='450',easing='easeOutExpo';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#F3F3F3;color:#585858;}
+		::-moz-selection{background:#111111;color:#F1F1F1;}
+		::selection{background:#111111;color:#F1F1F1;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_12.png);}
+		a{color:#111111;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -ms-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -webkit-gradient(linear, 0 0, 0 585858%, from(#333333), to(#3B3B3B));
+			  background-image: -webkit-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -o-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: linear-gradient(top, #585858, #3B3B3B);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#585858', endColorstr='#3B3B3B', GradientType=0);
+			  border-color: #3B3B3B #3B3B3B #bfbfbf;
+			  color:#F9F9F9;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #585858 #585858 #bfbfbf;
+		  background-color: #3B3B3B;
+		}
+		hr{border-top:1px solid #E5E5E5;border-bottom:1px solid #F9F9F9;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#333333;color:#F1F1F1;http://static.revaxarts-themes.com/noise.gif}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #444444;-moz-text-shadow:1px 1px 0px #444444;text-shadow:1px 1px 0px #444444;}
+		#documenter_sidebar ul{border-top:1px solid #222222;}
+		#documenter_sidebar ul a{border-top:1px solid #444444;border-bottom:1px solid #222222;color:#F1F1F1;}
+		#documenter_sidebar ul a:hover{background:#111111;color:#F1F1F1;border-top:1px solid #111111;}
+		#documenter_sidebar ul a.current{background:#111111;color:#F1F1F1;border-top:1px solid #111111;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-woocommerce-pdf-invoice">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#about_this_plugin" title="About This Plugin">About This Plugin</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#features" title="Features">Features</a></li>
+			<li><a href="#dependencies" title="Dependencies">Dependencies</a></li>
+			<li><a href="#how_to_access_invoices" title="How to Access Invoices">How to Access Invoices</a></li>
+			<li><a href="#admin_accessing_admin_page" title="Admin: Accessing Admin Page">Admin: Accessing Admin Page</a></li>
+			<li><a href="#admin_general_settings" title="Admin: general settings">Admin: General Settings</a></li>
+			<li><a href="#admin_seller_and_buyer" title="Admin: Seller & Buyer">Admin: Seller & Buyer</a></li>
+			<li><a href="#admin_content_blocks" title="Admin: Content Blocks">Admin: Content Blocks</a></li>
+			<li><a href="#admin_translation" title="Admin: Translation">Admin: Translation</a></li>
+			<li><a href="#admin_batch_download" title="Admin: Batch Download">Admin: Batch Download</a></li>
+			<li><a href="#admin_order_actions" title="Admin: Order Actions">Admin: Order Actions</a></li>
+			<li><a href="#support" title="Support">Support</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright RightPress 2013<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>WooCommerce PDF Invoice</h1>
+	<h2>Documentation</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 10/24/2013</li>
+	<li>latest update: 01/07/2014</li>
+	<li>by: <a href="http://codecanyon.net/user/RightPress">RightPress</a></li>
+	<li><a href="http://www.rightpress.net/woocommerce-pdf-invoice">www.rightpress.net/woocommerce-pdf-invoice</a></li>
+	<li>email: <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#114;&#105;&#103;&#104;&#116;&#112;&#114;&#101;&#115;&#115;&#46;&#110;&#101;&#116;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#114;&#105;&#103;&#104;&#116;&#112;&#114;&#101;&#115;&#115;&#46;&#110;&#101;&#116;</a></li>
+	</ul>
+	<p></p>
+	</section>
+
+<section id="about_this_plugin">
+	<div class="page-header"><h3>About</h3><hr class="notop"></div>
+<p>
+	This plugin automatically generates PDF invoices and lets your customers receive them by email or download directly from your store. WooCommerce PDF Invoice generates two types of invoices:
+<ul>
+<li><strong>Regular Invoices</strong> - this type of invoice is issued to a buyer when the products or services have already been provided or the payment was received and the order is being processed.</li>
+<li><strong>Proforma Invoices</strong> - this type of invoice is issued as a commitment from the seller to sell goods or provide services at specified prices and terms, simply it's a confirmed purchase order. Businesses usually issue proforma invoices when dealing with business-to-business sales as in some countries businesses tend to make payments via bank transfer in advance and proforma invoices are basis for such payments.</li>
+</ul>
+</p>
+<p>
+	WooCommerce PDF Invoice generates proforma invoices as soon as the order is placed. Regular invoices are generated when order status is changed to completed. If particular feature is enabled, this module also integrates with standard WooCommerce email functionality and adds attachments to the "New Order" and "Completed Order" emails. Also, as soon as invoices are generated, they can also be downloaded by both customer and administrator from the website itself.
+</p>
+<p>
+	WooCommerce PDF Invoice also attaches PDF invoices to WooCommerce Customer Invoice email - regular invoice if it has already been generated, proforma invoice otherwise (if enabled).
+</p>
+<p>
+	You can easily enable or disable any functionality that was described above from the administrator zone. Please refer to other sections of this documentation for more information.
+</p>
+</section>
+
+<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<p>
+	To install WooCommerce PDF Invoice plugin simply:
+<ul>
+<li>Make sure you have WordPress 3.5+ and WooCommerce 2.0.x installed</li>
+<li>WooCommerce does not have to be active during installation but this plugin won't do anything without WooCommerce being active</li>
+<li>Download the plugin from CodeCanyon</li>
+<li>Unzip the downloaded file and locate a file called <strong>woocommerce-pdf-invoice.zip</strong> under <strong>Plugin</strong></li>
+<li>Log in to your WordPress administrator zone</li>
+<li>Go to <strong>Plugins --> Add New --> Upload</strong></li>
+<li>Upload file <strong>woocommerce-pdf-invoice.zip</strong></li>
+<li>Activate the uploaded plugin</li>
+</ul>
+
+	In case FTP upload is required:
+<ul>
+<li>Download the plugin from CodeCanyon</li>
+<li>Extract the archive</li>
+<li>Locate a folder called <strong>woocommerce-pdf-invoice</strong> under <strong>Plugin</strong></li>
+<li>Upload this folder to <strong>wp-content/plugins</strong></li>
+<li>In administrator zone, go to <strong>Plugins</strong> and activate this plugin</li>
+</ul>
+</p>
+</section>
+
+	<section id="features">
+	<div class="page-header"><h3>Features</h3><hr class="notop"></div>
+<ul>
+	<li>
+		Automatically generates PDF invoices</li>
+	<li>
+		Attaches invoices to default WooCommerce emails</li>
+	<li>
+		Possible to manually resend invoice</li>
+	<li>
+		Uses rock solid TCPDF library</li>
+	<li>
+		Lists all taxes as configured in WooCommerce</li>
+	<li>
+		Support for multiple different tax rates</li>
+	<li>
+		Download link in &ldquo;View Order&rdquo; page for users</li>
+	<li>
+		Download link next to each order for admin</li>
+	<li>
+		Batch download for admin&nbsp;</li>
+	<li>
+		Proforma invoices supported</li>
+	<li>
+		Nice invoice design</li>
+	<li>
+		Set you own company logo and details</li>
+	<li>
+		Supports custom content blocks with 17 macros</li>
+	<li>
+		Supports up to four custom buyer fields</li>
+	<li>
+		Translate invoice labels from admin page</li>
+	<li>
+		Translate the entire plugin (.pot file included)</li>
+	<li>
+		Set your own invoice notes and footer text</li>
+	<li>
+		Display amount in words if needed</li>
+	<li>
+		Possible to add invoice prefix</li>
+	<li>
+		Change date format</li>
+</ul>
+</section>
+<section id="dependencies">
+	<div class="page-header"><h3>Dependencies</h3><hr class="notop"></div>
+<p>
+	
+	To generate beautiful PDF documents, TCPDF library is used in this plugin. You can read more about it <a href="http://www.tcpdf.org">here</a>.</p>
+<p>
+	You do not need to do anything with it though, it is included in the plugin and works out of the box.
+</p>
+</section>
+<section id="how_to_access_invoices">
+	<div class="page-header"><h3>How to Access Invoices</h3><hr class="notop"></div>
+<p>
+	&nbsp;</p>
+<h4>
+	Customers</h4>
+<p>
+	Customers receive invoices:</p>
+<ul>
+	<li>
+		by downloading them from &quot;View Order&quot; page (link under the table)</li>
+	<li>
+		as attachments along with WooCommerce standard emails</li>
+</ul>
+<p>
+	Both features may be disabled.</p>
+<p>
+	<img alt="" src="assets/images/image_7.jpg"  ></p>
+<p>
+	&nbsp;</p>
+<h4>
+	Shop Managers</h4>
+<p>
+	Shop managers can get invoices by:</p>
+<ul>
+	<li>
+		clicking on the invoice download link (download icon) next to each order in the &quot;Orders&quot; page</li>
+	<li>
+		downlowding archive of invoices for specified date range from &quot;Batch Download&quot; page (under &quot;PDF Invoices&quot;)</li>
+</ul>
+<p>
+	<img alt="" src="assets/images/image_3.jpg"></p>
+</section>
+<section id="admin_accessing_admin_page">
+	<div class="page-header"><h3>Admin: Accessing Admin Page</h3><hr class="notop"></div>
+<p>
+	You can change behavior of the plugin, translate text strings, download invoices in batches by clicking on &quot;PDF Invoices&quot; under WooCommerce menu.</p>
+<p>
+	<img alt="" src="assets/images/image_1.jpg"></p>
+</section>
+<section id="admin_general_settings">
+	<div class="page-header"><h3>Admin: General Settings</h3><hr class="notop"></div>
+<p>
+	On General Settings page you can enable or disable specific functionality and control other main settings of this module.
+</p>
+<p>
+	&nbsp;</p>
+<h4>General Settings</h4>
+<p>
+	These are the main settings of this plugin.
+</p>
+<p>
+	<img alt="" src="assets/images/image_8.jpg"></p>
+<p>
+	The following fields are available:
+<ul>
+	<li>
+		<strong>Enable invoicing</strong> - enable or disable invoicing.&nbsp;Invoices are generated as soon as orders are marked as completed.&nbsp;If enabled, invoices will also be attached to manually sent Customer Invoice emails.</li>
+	<li>
+		<strong>Display invoice buttons</strong> - if enabled, download button will be displayed for a customer next to each order in the orders list. These buttons are optional - if you disable them, invoice download links will still be displayed on a single order details page if <strong>Allow download</strong> is checked.
+	<li>
+		<strong>Display currency symbol</strong> - if enabled, currency symbol (e.g. $) will be displayed next to every amount on the invoice. Currency code (e.g. USD) is displayed next to total amount in any way.</li>
+	<li>
+		<strong>Display amount inclusive of tax</strong> - if enabled, line item price, line subtotal and subtotal will be displayed inclusive of tax. This setting is ignored when tax is displayed inline - amounts will be displayed exlusive of tax.</li>
+	<li>
+		<strong>Display tax rows</strong> - if enabled, all applicable taxes will be listed just above Total row. This setting is ignored when tax is displayed inline (with an exception of shipping tax).</li>
+	<li>
+		<strong>Display tax inline</strong> - select "When different rates are present", "Always" or "Never". You may need to display net amount, tax rate and tax amount individually for each line item. This is useful when different rates of the same tax are used for different items on the same invoice, e.g. reduced VAT rate is applied to specific group of products.</li>
+	<li>
+		<strong>Display product ID/SKU</strong> - if enabled, product ID/SKU will be displayed for each item just before the name.</li>
+	<li>
+		<strong>Date format</strong> - change date format if needed.</li>
+</ul>
+</p>
+<p>
+	&nbsp;</p>
+<h4>Invoice Settings</h4>
+<p>
+	These are settings for regular invoices only.
+</p>
+<p>
+	<img alt="" src="assets/images/image_9.jpg"></p>
+<p>
+	The following fields are available:
+<ul>
+	<li>
+		<strong>Allow download</strong> - show or hide download link.&nbsp;If enabled, clients will be able to download invoices from order preview page.</li>
+	<li>
+		<strong>Send by email</strong> -&nbsp;enable or disable sending by email.&nbsp;If enabled, PDF invoice will be emailed to the client along with Order Completed email.</li>
+	<li>
+		<strong>Invoice number prefix </strong>- enter invoice number prefix if needed.</li>
+	<li>
+		<strong>Next invoice number</strong> - change next invoice number if needed.</li>
+</ul>
+</p>
+<p>
+	&nbsp;</p>
+<h4>Proforma Invoice Settings</h4>
+<p>
+	These are settings for proforma invoices only.
+</p>
+<p>
+	<img alt="" src="assets/images/image_10.jpg"></h3>
+<p>
+	The following fields are available:
+<ul>
+	<li>
+		<strong>Enable proforma invoicing</strong> - enable or disable proforma invoices. Proforma invoices are generated as soon as order is placed. Proforma invoice ID equals order ID. As soon as order is processed, proforma invoices are replaced with newly generated regular invoices.&nbsp;If enabled, proforma invoices will also be attached to manually sent Customer Invoice emails.</li>
+	<li>
+		<strong>Allow download</strong> - show or hide download link.&nbsp;If enabled, clients will be able to download proforma invoices from order preview page.</li>
+	<li>
+		<strong>Send by email</strong> - enable or disable sending by email.&nbsp;If enabled, PDF proforma invoice will be emailed to the client along with New Order email.</li>
+</ul>
+</p>
+<p>
+	&nbsp;</p>
+<h4>Advanced</h4>
+<p>
+	These settings are for advanced users only. Do not use them unless you really know what you are doing!
+</p>
+<p>
+	<img alt="" src="assets/images/image_2.jpg"></p>
+<p>
+	The following fields are available:
+<ul>
+	<li>
+		<strong>Display amount in words</strong> - depending on your country, you may need to print amount in words on your invoices. Use translation file that comes with this plugin to translate numbers, set your own currency and plural forms.</li>
+</ul>
+</p>
+</section>
+<section id="admin_seller_and_buyer">
+	<div class="page-header"><h3>Admin: Seller & Buyer</h3><hr class="notop"></div>
+<p>
+	On Seller & Buyer page you can format Seller and Buyer block layout, set up your information and change logo image.
+</p>
+<p>
+	&nbsp;</p>
+<h4>Seller Block</h4>
+<p>
+	Use this section to change your company's logo and edit main information.
+</p>
+<p>
+	<img alt="" src="assets/images/image_5.jpg"></p>
+<p>
+	The following fields are available:
+<ul>
+	<li>
+		<strong>Logo image</strong> - enter URL or select from library your company logo image file.</li>
+	<li>
+		<strong>Logo resize factor (in percent)</strong> - increase this number if you want to make your logo larger on the invoice and vice versa..</li>
+	<li>
+		<strong>Block title</strong> - change title of the seller details block.</li>
+	<li>
+		<strong>Company name</strong> - change company name.</li>
+	<li>
+		<strong>Company details</strong> - use this field to set up your company details, including address, company registration number, tax code etc..</li>
+</ul>
+</p>
+<p>
+	&nbsp;</p>
+<h4>Buyer Block</h4>
+<p>
+	Use this section to change the layout of the buyer details block.
+</p>
+<p>
+	<img alt="" src="assets/images/image_6.jpg"></p>
+<p>
+	The following fields are available:
+<ul>
+	<li>
+		<strong>Block title</strong> - change title of the seller details block.</li>
+	<li>
+		<strong>Buyer details layout</strong> - use this field to set up the layout of the buyer details block. The following macros are available: {{billing_address_1}}, {{billing_address_2}}, {{billing_postcode}}, {{billing_city}}, {{billing_state}}, {{billing_country}}, {{billing_email}}, {{billing_phone}}. You can use custom fields in the same way, e.g. {{my_custom_field_key}}. Do not include buyer first name, last name and company name - these fields are displayed automatically.</li>
+	<li>
+		<strong>Remove lines with empty values</strong> - if enabled, all lines that contain macros with empty values only will be removed.</li>
+</ul>
+</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="admin_content_blocks">
+	<div class="page-header"><h3>Admin: Content Blocks</h3><hr class="notop"></div>
+<p>
+	Content blocks are used to display additional information on the invoice like your bank account details. Leave fields blank to hide.</p>
+<p>
+	&nbsp;</p>
+<h4>Footer</h4>
+<p>Use this field to change what's displayed on the footer of your invoice.</p>
+<p>
+	<img alt="" src="assets/images/image_13.jpg"></p>
+<p>
+	&nbsp;</p>
+<h4>Custom blocks</h4>
+<p>Custom content blocks are used to display additional information on the invoice like your bank account details. Leave can leave fields blank to hide them completely.</p>
+<p>
+	<img alt="" src="assets/images/image_14.jpg"></p>
+<p>There are four custom blocks in total that can be controlled individually. The following fields are available:
+<ul>
+	<li>
+		<strong>Title</strong> - title for the custom content block (e.g. "Order notes").</li>
+	<li>
+		<strong>Content</strong> - content of the custom content block.</li>
+	<li>
+		<strong>Displayed on</strong> - chose whether to display this block on regular invoices, on proforma invoices, or both.</li>
+</ul>
+</p>
+<p>
+	&nbsp;</p>
+<h4>Macros</h4>
+<p>You can use macros to dynamically insert order details into footer text, content block title or content block text.</p>
+<p>The following macros are available:
+	<li>
+		<strong>{{order_id}}</strong> - replaced with Order ID.</li>
+	<li>
+		<strong>{{order_date}}</strong> - replaced with Order Date.</li>
+	<li>
+		<strong>{{customer_id}}</strong> - replaced with Customer ID.</li>
+	<li>
+		<strong>{{customer_note}}</strong> - replaced with Customer Note.</li>
+	<li>
+		<strong>{{billing_email}}</strong> - replaced with Customer Billing Email.</li>
+	<li>
+		<strong>{{billing_phone}}</strong> - replaced with Customer Billing Phone.</li>
+	<li>
+		<strong>{{payment_method}}</strong> - replaced with Payment Method Title.</li>
+	<li>
+		<strong>{{shipping_method}}</strong> - replaced with Shipping Method Title.</li>
+	<li>
+		<strong>{{shipping_first_name}}</strong> - replaced with Shipping First Name.</li>
+	<li>
+		<strong>{{shipping_last_name}}</strong> - replaced with Shipping Last Name.</li>
+	<li>
+		<strong>{{shipping_company}}</strong> - replaced with Shipping Company.</li>
+	<li>
+		<strong>{{shipping_address_1}}</strong> - replaced with Shipping Address 1.</li>
+	<li>
+		<strong>{{shipping_address_2}}</strong> - replaced with Shipping Address 2.</li>
+	<li>
+		<strong>{{shipping_city}}</strong> - replaced with Shipping City.</li>
+	<li>
+		<strong>{{shipping_postcode}}</strong> - replaced with Shipping ZIP/Postal Code.</li>
+	<li>
+		<strong>{{shipping_country}}</strong> - replaced with Shipping Country.</li>
+	<li>
+		<strong>{{shipping_state}}</strong> - replaced with Shipping State.</li>
+</p>
+<p>
+To use macros, simply insert one of them where you want particular value to appear - macro will be replaced with actual content on the fly.
+</p>
+<p>To add your own additional macros, use filter hook <strong>woo_pdf_macros</strong>.</p>
+
+
+</section>
+<section id="admin_translation">
+	<div class="page-header"><h3>Admin: Translation</h3><hr class="notop"></div>
+<p>
+	On this page, you can translate all titles / labels that are displayed on the invoice.</p>
+<p>
+	<img alt="" src="assets/images/image_11.jpg"></p>
+<p>Simply change the value and submit the form to make changes.</p>
+<p>
+	If you wish to translate the plugin itself, use .pot file that comes with this plugin under /languages directory (requires some technical knowledge).</p>
+</section>
+<section id="admin_batch_download">
+	<div class="page-header"><h3>Admin: Batch Download</h3><hr class="notop"></div>
+<p>On Batch Download page, you can download all regular invoices that were generated during particular time frame in a single ZIP archive.</p>
+<p>
+	<img alt="" src="assets/images/image_4.jpg"></p>
+<p>
+	If you wish to download invoices in batch, not one by one, simply go to Batch Download section, select your desired date range and hit &quot;Download Invoices&quot;. ZIP file will be pushed to your browser with all invoices that were generated during this period.</p>
+</section>
+
+<section id="admin_order_actions">
+	<div class="page-header"><h3>Admin: Order Actions</h3><hr class="notop"></div>
+<p>This plugin adds a widget to the right sidebar in the "Edit Order" view. This widget allows you to download proforma invoice or generate regular invoice:</p>
+<p>
+	<img alt="" src="assets/images/image_16.jpg"></p>
+<p>For completed orders, this widget allows you to download regular invoice or delete it if you need to re-generate it when order details are changed:</p>
+<p>
+	<img alt="" src="assets/images/image_15.jpg"></p>
+<p>Please note that if you regenerate invoice, its number will be changed to the next available number.</p>
+</section>
+
+<section id="support">
+	<div class="page-header"><h3>Support</h3><hr class="notop"></div>
+<p>
+	If you have any questions, do not hesitate to visit our <a href="http://support.rightpress.net" style="text-decoration:underline;" target="_blank">support center</a> or submit a <a href="http://support.rightpress.net/hc/en-us/requests/new" style="text-decoration:underline;" target="_blank">support ticket</a>.</p>
+</section>
+
+	</div>
+</body>
+</html>

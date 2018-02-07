@@ -1,0 +1,96 @@
+https://www.ovh.com/manager/web/index.html#/configuration/hosting/cooktocelebrate.com?domain=cooktocelebrate.com&tab=GENERAL_INFORMATIONS 
+ 
+ for the admin access
+ credentials : ff123002-ovh
+ password: Esdoornstraat.147
+
+
+ - ID (Login FTP)     : cooktocenz
+- Password FTP : ezU2gNmdF5Be
+changed password: Awesome123
+
+
+
+You have given the requested privileges on the database “gaurasjp_cooktocelebrate” to the user “gaurasjp_acer”.
+
+hex code please #??????
+ css works on hex
+ 160f21
+ 
+ 
+ btw, for themeforest, you can access with "fabienfaure78" / "fab1310" to redownload the theme
+ =================
+ thats the ftp info I have, i hope it works Hostname (Server FTP)    : ftp.cluster020.hosting.ovh.net
+- ID (Login FTP)     : cooktocenz
+- Password FTP : ezU2gNmdF5Be
+I also have such info 
+ cooktocenz438	cooktocenz438	cooktocenz438.mysql.db	Mamakoza76
+ Mamakoza76 is a typical password i've used a repeatedly for this project, you can try it if others don't work
+ ==================================
+ phpmyadmin
+password: CTC2017web
+
+CTCweb2018 
+===================================================================================================
+===================================================================================================
+New Hosting - Hostgator
+===================================================================================================
+===================================================================================================
+
+URL: https://portal.hostgator.com/
+Username: fabienfaure78@gmail.com
+Password: CTCweb18
+
+--------------------------------------
+
+SSH
+ssh -p 2222 fabienfaure@108.167.189.64
+Password: *uDft0YWrvMl
+
+--------------------------------------
+
+FTP:
+Username: fabien@cooktocelebrate.com 
+Server: gator4238.hostgator.com 
+Password: ioI#hjtoDxA3
+
+-------------------------------------
+
+Database: fabienfa_cooktocelebrate
+DB Username: fabienfa_dbuser
+DB Password: gz%0ynP^O]rD
+
+-------------------------------------
+
+Email: daria@cooktocelebrate.com
+Password: j5Xispo2mFi!
+
+------------------------------------------------------------------------------
+
+Welcome Email
+
+Hello Fabien Faure,
+
+Thank you for your order with HostGator.com!
+
+You can login to our billing system at https://portal.hostgator.com/login, using the email address we sent this email to, and the password included in your Welcome email.
+    Shared Plan:        Baby
+    Your Control Panel: https://gator4238.hostgator.com:2083
+    Username:           fabienfaure
+    Domain:             cooktocelebrate.com
+    Password:           *uDft0YWrvMl
+    1st Nameserver:     ns8475.hostgator.com
+    2nd Nameserver:     ns8476.hostgator.com
+    Server IP:          108.167.189.64
+
+
+----------------------------------------------------------------------------
+
+For the domain - old name server were (over ovh)
+ns200.anycast.me
+dns200.anycast.me
+
+
+
+
+

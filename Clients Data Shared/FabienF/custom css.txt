@@ -1,0 +1,39 @@
+#footer.style1 {
+    background-color: #ccc;
+    color: #160f21;
+}
+#footer.style1 figure.paymenttypes.amazon{
+    display:none;
+}
+#footer .footer-menu p,#footer .footer-toggle a {
+    color: #160f21;
+}
+.header.style1{
+    background-color:#fff;
+}
+.background--dark .header.style1:hover #nav .sf-menu > li > a,.background--dark .header.style1 #nav .sf-menu > li > a,.background--dark .header.style1 .account-holder ul li a{
+    color:#141414;
+}
+.background--dark.home #footer.style1:not(:hover) .footer-toggle a, .background--dark.snap_scroll_on #footer.style1:not(:hover) .footer-toggle a, .background--dark.home #footer.style1:not(:hover) .footer-menu p, .background--dark.snap_scroll_on #footer.style1:not(:hover) .footer-menu p{
+    color: #160f21;
+}
+.shop_bar .category_bar ul li a.active{
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 40.063em)
+{
+#footer.style2 {
+    padding: 20px 0;
+}
+}
+
+#footer .social-links a, #footer.style2 .footer-menu p, #footer.style2 .footer-menu p a {
+    color: #fff;
+}
+.gaurav_cats_below_slider .wpb_column .product-category{
+     padding: 15px; 
+}
+.gaurav_cats_below_slider .wpb_column .product-category h2 mark{
+    display:none;
+}
