@@ -1,0 +1,54 @@
+[05-Feb-2018 16:20:46 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php:71
+Stack trace:
+#0 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(572): RevSliderBaseAdmin::addMetaBox('Revolution Slid...', '', Array, NULL)
+#1 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(73): RevSliderAdmin->addSliderMetaBox()
+#2 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(44): RevSliderAdmin->init()
+#3 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/revslider.php(162): RevSliderAdmin->__construct('/home/k3fwuz87t...')
+#4 /home/k3fwuz87tsip/public_html/external1/wp-settings.php(305): include_once('/home/k3fwuz87t...')
+#5 /home/k3fwuz87tsip/public_html/external1/wp-config.php(90): require_once('/home/k3fwuz87t...')
+#6 /home/k3fwuz87tsip/public_html/extern in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php on line 71
+[05-Feb-2018 16:20:56 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php:71
+Stack trace:
+#0 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(572): RevSliderBaseAdmin::addMetaBox('Revolution Slid...', '', Array, NULL)
+#1 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(73): RevSliderAdmin->addSliderMetaBox()
+#2 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(44): RevSliderAdmin->init()
+#3 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/revslider.php(162): RevSliderAdmin->__construct('/home/k3fwuz87t...')
+#4 /home/k3fwuz87tsip/public_html/external1/wp-settings.php(305): include_once('/home/k3fwuz87t...')
+#5 /home/k3fwuz87tsip/public_html/external1/wp-config.php(90): require_once('/home/k3fwuz87t...')
+#6 /home/k3fwuz87tsip/public_html/extern in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php on line 71
+[05-Feb-2018 16:21:26 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php:71
+Stack trace:
+#0 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(572): RevSliderBaseAdmin::addMetaBox('Revolution Slid...', '', Array, NULL)
+#1 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(73): RevSliderAdmin->addSliderMetaBox()
+#2 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(44): RevSliderAdmin->init()
+#3 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/revslider.php(162): RevSliderAdmin->__construct('/home/k3fwuz87t...')
+#4 /home/k3fwuz87tsip/public_html/external1/wp-settings.php(305): include_once('/home/k3fwuz87t...')
+#5 /home/k3fwuz87tsip/public_html/external1/wp-config.php(90): require_once('/home/k3fwuz87t...')
+#6 /home/k3fwuz87tsip/public_html/extern in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php on line 71
+[05-Feb-2018 16:21:26 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php:71
+Stack trace:
+#0 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(572): RevSliderBaseAdmin::addMetaBox('Revolution Slid...', '', Array, NULL)
+#1 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(73): RevSliderAdmin->addSliderMetaBox()
+#2 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(44): RevSliderAdmin->init()
+#3 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/revslider.php(162): RevSliderAdmin->__construct('/home/k3fwuz87t...')
+#4 /home/k3fwuz87tsip/public_html/external1/wp-settings.php(305): include_once('/home/k3fwuz87t...')
+#5 /home/k3fwuz87tsip/public_html/external1/wp-config.php(90): require_once('/home/k3fwuz87t...')
+#6 /home/k3fwuz87tsip/public_html/extern in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php on line 71
+[05-Feb-2018 16:25:04 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php:71
+Stack trace:
+#0 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(572): RevSliderBaseAdmin::addMetaBox('Revolution Slid...', '', Array, NULL)
+#1 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(73): RevSliderAdmin->addSliderMetaBox()
+#2 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(44): RevSliderAdmin->init()
+#3 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/revslider.php(162): RevSliderAdmin->__construct('/home/k3fwuz87t...')
+#4 /home/k3fwuz87tsip/public_html/external1/wp-settings.php(305): include_once('/home/k3fwuz87t...')
+#5 /home/k3fwuz87tsip/public_html/external1/wp-config.php(90): require_once('/home/k3fwuz87t...')
+#6 /home/k3fwuz87tsip/public_html/extern in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php on line 71
+[05-Feb-2018 16:25:24 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php:71
+Stack trace:
+#0 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(572): RevSliderBaseAdmin::addMetaBox('Revolution Slid...', '', Array, NULL)
+#1 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(73): RevSliderAdmin->addSliderMetaBox()
+#2 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/admin/revslider-admin.class.php(44): RevSliderAdmin->init()
+#3 /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/revslider.php(162): RevSliderAdmin->__construct('/home/k3fwuz87t...')
+#4 /home/k3fwuz87tsip/public_html/external1/wp-settings.php(305): include_once('/home/k3fwuz87t...')
+#5 /home/k3fwuz87tsip/public_html/external1/wp-config.php(90): require_once('/home/k3fwuz87t...')
+#6 /home/k3fwuz87tsip/public_html/extern in /home/k3fwuz87tsip/public_html/external1/wp-content/plugins/revslider/includes/framework/base-admin.class.php on line 71
